@@ -1,0 +1,1 @@
+Esta carpeta sirve para gestionar funciones utiles que podemos exportar e importar en otros archivos para utilizarlas
