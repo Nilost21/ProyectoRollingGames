@@ -38,7 +38,7 @@
         </section>
         
         <section class="container mt-5">
-            <table class="table">
+            <table class="table text-center">
                 <thead>
                     <tr>
                         <th scope="col">Código</th>
@@ -51,7 +51,25 @@
                 </thead>
                 <tbody id="adminTableBody">
 
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Gta-v</td>
+                        <td>acción</td>
+                        <td>piola en ps4</td>
+                        <td>
+                            <div class="form-check w-100 d-flex justify-content-center m-0 p-0">
+                                <input type="checkbox" class="form-check-input" checked onchange="setPublished('${juego.id}')">
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-secondary  me-1">Editar<i class="bi bi-pencil ms-1" data-bs-target = "#edit-juego-modal"></i></button>
 
+                            <button type="button" class="btn btn-sm btn-info me-1 " data-bs-target = "#destacar-juego-modal">Destacar<i class="bi bi-star ms-1"></i></button>
+
+                            <button type="button" class="btn btn-sm btn-danger me-1 mt-2" data-bs-target = "#delete-juego-modal">Eliminar<i class="bi bi-trash ms-1"></i></button>
+                        </td>
+                    </tr>
+                    
                 </tbody>
             </table>
         </section>
