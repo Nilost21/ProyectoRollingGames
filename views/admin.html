@@ -10,11 +10,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script type="module" src="../js/admin.init.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <script src="../js/admin.init.js" defer></script>
     <!-- FALTA FAVICON -->
   </head>
   <body>
@@ -38,7 +38,7 @@
         </section>
         
         <section class="container mt-5">
-            <table class="table text-center">
+            <table class="table text-center table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Código</th>
@@ -49,9 +49,9 @@
                         <th scope="col">Opciones</th>
                     </tr>
                 </thead>
-                <tbody id="adminTableBody">
+                <tbody class="table-group-divider" id="adminTableBody">
 
-                    <tr>
+                    <!-- <tr>
                         <th scope="row">1</th>
                         <td>Gta-v</td>
                         <td>acción</td>
@@ -68,11 +68,14 @@
 
                             <button type="button" class="btn btn-sm btn-danger me-1 mt-2" data-bs-target = "#delete-juego-modal">Eliminar<i class="bi bi-trash ms-1"></i></button>
                         </td>
-                    </tr>
+                    </tr> -->
                     
                 </tbody>
             </table>
         </section>
+
+
+        
     </main>
 
 

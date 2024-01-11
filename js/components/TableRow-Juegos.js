@@ -1,11 +1,11 @@
-import { getJuegos } from "../services/getJuegos";
-import { getJuegoIndexById } from "../services/getJuegoIndexById";
-import { setModifiedJuegos } from "../services/setModifiedJuegos";
-import { renderTableBody } from "../admin.init";
+import { getJuegos } from "../services/getJuegos.js";
+import { getJuegoIndexById } from "../services/getJuegoIndexById.js";
+import { setModifiedJuegos } from "../services/setModifiedJuegos.js";
+import { renderTableBody } from "../admin.init.js";
 
-const tableRowJuegos = (juego) =>{
+const TableRowJuegos = (juego) =>{
     return `
-    <tr>
+    <tr class="align-middle">
         <th scope="row">${juego.id}</th>
         <td>${juego.name}</td>
         <td>${juego.category}</td>
@@ -19,12 +19,12 @@ const tableRowJuegos = (juego) =>{
             </div>`
         }
         </td>
-        <td>
-            <button type="button" class="btn btn-sm btn-secondary  me-1">Editar<i class="bi bi-pencil ms-1" data-bs-target = "#edit-juego-modal"></i></button>
+        <td class = "col-lg-3 align-items-center">
+            <button type="button" class="btn btn-sm btn-secondary  me-1 my-2">Editar<i class="bi bi-pencil ms-1" data-bs-target = "#edit-juego-modal"></i></button>
 
-            <button type="button" class="btn btn-sm btn-info me-1 " data-bs-target = "#destacar-juego-modal">Destacar<i class="bi bi-star ms-1"></i></button>
+            <button type="button" class="btn btn-sm btn-info me-1 my-2" data-bs-target = "#destacar-juego-modal">Destacar<i class="bi bi-star ms-1"></i></button>
 
-            <button type="button" class="btn btn-sm btn-danger me-1 mt-2" data-bs-target = "#delete-juego-modal">Eliminar<i class="bi bi-trash ms-1"></i></button>
+            <button type="button" class="btn btn-sm btn-danger me-1 my-2" data-bs-target = "#delete-juego-modal">Eliminar<i class="bi bi-trash ms-1"></i></button>
         </td>
     </tr>
     `;
@@ -35,11 +35,11 @@ const setPublished = (id) => {
     const juegos = getJuegos();
     const juegoIndex = getJuegoIndexById(id);
 
-    juegos[juegoIndex] = !juegos[juegoIndex].published;
+    juegos[juegoIndex].published = !juegos[juegoIndex].published;
     setModifiedJuegos(juegos);
     renderTableBody();
 };
 
 window.setPublished = setPublished;
 
-export default tableRowJuegos;
+export default TableRowJuegos;

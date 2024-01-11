@@ -1,4 +1,4 @@
-import { getJuegos } from "./getJuegos";
+import { getJuegos } from "./getJuegos.js";
 
 /**
  * @param {string} id Recibe el Id de un juego
