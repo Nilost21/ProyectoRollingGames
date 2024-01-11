@@ -1,5 +1,7 @@
-
-
+import { getJuegos } from "../services/getJuegos";
+import { getJuegoIndexById } from "../services/getJuegoIndexById";
+import { setModifiedJuegos } from "../services/setModifiedJuegos";
+import { renderTableBody } from "../admin.init";
 
 const tableRowJuegos = (juego) =>{
     return `
