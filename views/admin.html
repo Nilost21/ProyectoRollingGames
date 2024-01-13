@@ -26,7 +26,7 @@
 
 
     <main>
-        <section class="d-flex justify-content-center align-items-center w-100 mt5">
+        <section class="d-flex justify-content-center align-items-center w-100 mt-5">
             <div><img src="../assets/admin-logo.png" alt="admin-logo"></div>
             <div class="ms-4 text-start">
                 <h1 class="display-5 fw-bolder  ">Rolling Games</h1>
@@ -34,12 +34,13 @@
             </div>
         </section>
 
-        <section class="container text-end">
-            <button type="button" class="btn btn-outline-light rounded-5">Agregar Juego nuevo<i class="ms-2 bi-plus-lg"></i></button>
-        </section>
         
-        <section class="container mt-5">
-            <table class="table text-center table-striped">
+        <section class="container-fluid px-5 mt-5">
+            <h2 class="border border-5 border-info rounded p-3 w-100">Administración de Juegos</h2>
+            <section class="container text-center my-5">
+                <button type="button" class="btn btn-outline-light rounded-5">Agregar Juego nuevo<i class="ms-2 bi-plus-lg"></i></button>
+            </section>
+            <table class="table table-hover text-center table-striped border-opacity-10 border border-light">
                 <thead>
                     <tr>
                         <th scope="col">Código</th>
@@ -75,7 +76,7 @@
             </table>
         </section>
 
-        <!-- Modal -->
+        <!-- Modal - Juego Destacado -->
         <div class="modal fade text-center" id="destacar-juego-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
@@ -87,13 +88,13 @@
                     <p id="modal-juegoDestacado-nombre"></p>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
             </div>
         </div>
-  
-
+        
+        
     </main>
 
 
