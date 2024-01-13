@@ -25,9 +25,9 @@ const TableRowJuegos = (juego) =>{
         <td class = "col-lg-3 align-items-center px-5">
             <button type="button" class="btn btn-sm btn-secondary w-100 me-1 my-2">Editar<i class="bi bi-pencil ms-1" data-bs-target = "#edit-juego-modal"></i></button>
 
-            <button type="button" onclick = "setDestacado('${juego.id}')" class="btn btn-sm w-100 text-light-emphasis  ${juego.destacado ? 'btn-warning':'btn-info'} me-1 my-2" data-bs-toggle = "modal"  ${juego.destacado ? "": "data-bs-target = \"#destacar-juego-modal\""}>${juego.destacado ? '<i class="bi bi-star-fill"></i>' : "Destacar <i class=\"bi bi-star ms-1\"></i>"}</button>
+            <button type="button" onclick = "setDestacado('${juego.id}')" class="btn btn-sm w-100 text-light-emphasis  ${juego.destacado ? 'btn-warning':'btn-outline-info'} me-1 my-2" data-bs-toggle = "modal"  ${juego.destacado ? "": "data-bs-target = \"#destacar-juego-modal\""}>${juego.destacado ? '<i class="bi bi-star-fill"></i>' : "Destacar <i class=\"bi bi-star ms-1\"></i>"}</button>
 
-            <button type="button" class="btn btn-sm w-100 btn-danger me-1 my-2" data-bs-toggle = "modal" data-bs-target = "#delete-juego-modal-${juego.id}">Eliminar<i class="bi bi-trash ms-1"></i></button>
+            <button type="button" class="btn btn-sm w-100 btn-outline-danger me-1 my-2" data-bs-toggle = "modal" data-bs-target = "#delete-juego-modal-${juego.id}">Eliminar<i class="bi bi-trash ms-1"></i></button>
         </td>
     </tr>
 
