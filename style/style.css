@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 500px;
+    height: 200px;
+    margin-left: 65px;
+    border-radius: 5px;
+}
+u{
+    color: #3654ff;
+}
+iframe{
+    border-radius: 5px;
+    margin-left: 10px;
+}
+p{
+  text-align: center;
+  margin-top: 3px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+   
+}
+main {
+    background-color: #121212;
+    color: white;
+}
+
+div.contenedorTexto {
+    margin-left: 10px;
+    
+}
+    .appstore-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+        width: 300px;
+        border: 3px solid rgb(189, 189, 189);
+        background-color: rgb(15, 15, 15);
+        border-radius: 10px;
+        gap: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0px 0px 100px -30px rgb(255, 255, 255);
+        margin-top: 15px;
+        margin-left: 170px;
+      }
+      .appstore-button svg {
+        width: 45px;
+      }
+      .appstore-button svg path {
+        fill: white;
+        transition: all 0.3s;
+      }
+      .button-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: white;
+        transition: all 0.3s;
+      }
+      .top-text {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .bottom-text {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .appstore-button:hover {
+        background-color: rgb(236, 236, 236);
+        border: 3px solid rgb(138, 138, 138);
+      }
+      .appstore-button:hover .button-text {
+        color: black;
+      }
+      .appstore-button:hover svg path {
+        fill: black;
+      }
+    h5{
+        margin-left: 300px;
+        margin-top: 15px;
+    }
+.button1{
+    margin-left: 100px;
+}
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 18.5em;
+    height: 3.6em;
+    border: #3654ff 0.2em solid;
+    border-radius: 11px;
+    text-align: center;
+    transition: all 0.6s ease;
+    margin-top: 10px;
+    margin-left: 170px;
+}
+  
+  .button:hover {
+    background-color: #3654ff;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+  .button2 {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 18.5em;
+    height: 3.6em;
+    border: #ffffff 0.2em solid;
+    border-radius: 11px;
+    text-align: center;
+    transition: all 0.6s ease;
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+  
+  .button2:hover {
+    background-color: #ffffff;
+    color: #000
+  }
+  
+  .button2 svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+
+  .button2:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+.row{
+    margin-left: 5px;
+}
+.texto{
+    background-color: #2A2A2A;
+    border-radius: 5px;
+    }
+    /* ... (Estilos existentes) */
+
+.card {
+    background-color: #2A2A2A;
+    border: 1px solid #ffffff; /* Añade un borde blanco alrededor de la tarjeta */
+    border-radius: 10px;
+  }
+  
+  .card-title,
+  .card-text,
+  .text-muted {
+    color: white; /* Establece el color del texto dentro de la tarjeta a blanco */
+  }
+  
+  .btn-primary {
+    background-color: #3654ff; /* Cambia el color del botón primario */
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1f3d7a; /* Cambia el color del botón primario al pasar el mouse */
+  }
+
+.card-img-top {
+    width: 500px;
+    height: auto;
+  }
+
+  
