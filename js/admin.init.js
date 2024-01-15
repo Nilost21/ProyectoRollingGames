@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //protectedAdminRoute();
     renderTableBody();
 });
-console.log(getJuegos(),"<--Linea")
+
 const tableBody = document.getElementById("adminTableBody")
 
 /**
@@ -19,7 +19,7 @@ const tableBody = document.getElementById("adminTableBody")
 export const renderTableBody = () => {
     tableBody.innerHTML = "";
     const juegos = getJuegos();
-
+    console.log(getJuegos(),"<--Linea")
     juegos.map(juego => tableBody.innerHTML += TableRowJuegos(juego));
 }
 
@@ -49,7 +49,7 @@ const agregarNuevoJuego = () => {
     
     setTimeout(()=>{
         modalExito.hide();
-    },2000);
+    },2500);
     
     nombreForm.value = "";
     descriptionForm.value = "";
