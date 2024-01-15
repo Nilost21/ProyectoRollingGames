@@ -34,14 +34,34 @@ const agregarNuevoJuego = () => {
     const video2Form = document.getElementById("video2Juego");
     const publishedForm = document.getElementById("publicadoJuego");
 
-    createJuego({name: nombreForm.value, category: categoryForm.value, description: descriptionForm.value, published: publishedForm.value == 'on' ? true : false , destacado: false, image1: image1Form.value, image2: image2Form.value, video1: video1Form.value, video2: video2Form.value});
+    const frase = document.getElementById("juegoNuevoFrase");
+    frase.innerHTML = `Juego: ${nombreForm.value} ahora forma parte de tu lista <i class="bi bi-emoji-sunglasses ms-3"></i>`
 
+    createJuego({name: nombreForm.value, category: categoryForm.value, description: descriptionForm.value, published: publishedForm.checked , destacado: false, image1: image1Form.value, image2: image2Form.value, video1: video1Form.value, video2: video2Form.value});
 
+    
     // Cerrar el modal después de agregar el juego
-    const modal = new bootstrap.Modal(document.getElementById('nuevoJuegoModal'));
-    modal.hide();
+    const modalForm = new bootstrap.Modal(document.getElementById('nuevoJuegoModal'));
+    modalForm.hide();
+
+    const modalExito = new bootstrap.Modal(document.getElementById('juegoNuevoExito'));
+    modalExito.show();
+    
+    setTimeout(()=>{
+        modalExito.hide();
+    },2000);
+    
+    nombreForm.value = "";
+    descriptionForm.value = "";
+    categoryForm.value = "";
+    image1Form.value = "";
+    image2Form.value = "";
+    video1Form.value = "";
+    video2Form.value = "";
+    publishedForm.value = "";
 
     renderTableBody();
 }
+
 
 window.agregarNuevoJuego = agregarNuevoJuego;
