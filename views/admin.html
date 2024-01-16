@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Games | Admin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="../js/admin.init.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../style/admin.css">
+    <!-- FALTA FAVICON -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+  <body>
+    <!-- ======================================================== -->
+    <!-- ===================== FALTA HEADER ===================== -->
+    <!-- ======================================================== -->
+
+
+
+    <main>
+        <section class="d-flex justify-content-center align-items-center w-100 mt-5">
+            <div><img src="../assets/admin-logo.png" alt="admin-logo"></div>
+            <div class="ms-4 text-start">
+                <h1 class="display-5 fw-bolder  ">Rolling Games</h1>
+                <h4 class="display-6 ">Administrador</h4>
+            </div>
+        </section>
+
+        
+        <section class="container-fluid px-5 mt-5 w-100 ">
+            <h2 class="border border-5 border-info rounded p-3 w-100">Administración de Juegos</h2>
+            
+            <section class="container text-center my-5">
+                <button type="button" class="btn btn-outline-light rounded-5" data-bs-toggle = "modal" data-bs-target = "#nuevoJuegoModal">Agregar Juego nuevo<i class="ms-2 bi-plus-lg"></i></button>
+            </section>
+            <table class="table table-hover text-center table-striped border-opacity-10 border border-light">
+                <thead>
+                    <tr class="align-top">
+                        <th scope="col">Código</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descuento (%)</th>
+                        <th scope="col">Publicado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider" id="adminTableBody">
+
+                    <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Gta-v</td>
+                        <td>acción</td>
+                        <td>piola en ps4</td>
+                        <td>
+                            <div class="form-check w-100 d-flex justify-content-center m-0 p-0">
+                                <input type="checkbox" class="form-check-input" checked onchange="setPublished('${juego.id}')">
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-secondary  me-1">Editar<i class="bi bi-pencil ms-1" data-bs-target = "#edit-juego-modal"></i></button>
+
+                            <button type="button" class="btn btn-sm btn-info me-1 " data-bs-target = "#destacar-juego-modal">Destacar<i class="bi bi-star ms-1"></i></button>
+
+                            <button type="button" class="btn btn-sm btn-danger me-1 mt-2" data-bs-target = "#delete-juego-modal">Eliminar<i class="bi bi-trash ms-1"></i></button>
+                        </td>
+                    </tr> -->
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Modal - Juego Destacado -->
+        <div class="modal fade text-center" id="destacar-juego-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">La nueva estrella!<i class="bi bi-star ms-3"></i></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-juegoDestacado-nombre"></p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+
+    <!-- Modal - Agregar Juego nuevo-->
+    <div class="modal fade" id="nuevoJuegoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="agregarJuegoEncabezado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="agregarJuegoEncabezado"><i class="bi bi-folder-plus me-3"></i></i>Agregar Juego nuevo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="nuevoJuegoForm" name="formulariopiola">
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nameJuego" maxlength="50" placeholder ="Ingresa el nombre del hit" name = "nombre">
+                            <label for="nameJuego" class="form-label">Nombre</label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descriptionJuego" class="form-label">Descripcion del juego</label>
+                            <textarea class="form-control" id="descriptionJuego" rows="3" placeholder ="Cuéntanos por qué decidiste añadirlo" name = "description"></textarea>
+                        </div>
+
+                        <div class="form-floating">
+                            <select class="form-select" aria-label="Floating label select example" id="categoryJuego" name = "category">
+                                <option selected>---------</option>
+                                <option value="accion">Acción</option>
+                                <option value="aventura">Aventura</option>
+                                <option value="deportes">Deportes</option>
+                                <option value="estrategia">Estrategia</option>
+                                <option value="puzzle">Puzzle</option>
+                            </select>
+                            <label for="categoryJuego">Selecciona una categoría</label>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="row mb-3">
+                            <label for="precioJuego" class ="col-3 align-bottom">Precio:</label>
+                            <div class="col-9">
+                                <input type="number" class="form-control text-center " id="precioJuego" placeholder="$ [0 - 1000000]" min="0" max="1000000" >
+                            </div>
+                        </div>
+                            
+                        <div class="row mb-3">
+                            <label for="descuentoJuego" class ="col-6 align-bottom">Porcentaje de Descuento</label>
+                            <div class="col-6">
+                                <input type="number" class="form-control text-center " id="descuentoJuego" placeholder="% [0 - 100]" min="0" max="100">
+                            </div>
+                        </div>
+
+                        <hr>
+                        
+                        <div class="row mb-3">
+                            <label for="image1Juego" class="col-3 col-form-label">Image 1</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="image1Juego" maxlength="50" placeholder ="Ingresa la URL de la imagen" name = "image1">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="image2Juego" class="col-3 col-form-label">Image 2</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="image2Juego" maxlength="50" placeholder ="Ingresa la URL de la imagen" name = "image2">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="video1Juego" class="col-3 col-form-label">Video 1</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="video1Juego" maxlength="50" placeholder ="Ingresa la URL del video" name = "video1">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="video2Juego" class="col-3 col-form-label">Video 2</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="video2Juego" maxlength="50" placeholder ="Ingresa la URL del video" name = "video2">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="publicadoJuego" name = "published">
+                            <label class="form-check-label" for="publicadoJuego">Publicado</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-outline-info" onclick="agregarNuevoJuego()" data-bs-dismiss="modal">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Modal - Agregar Juego nuevo - Exito-->
+    <div
+        class="modal fade modal-lg"
+        id="juegoNuevoExito"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body border-0">
+              <div class="text-center">
+                <i class="bi bi-check-lg display-1 text-success"></i>
+                <h2 class="fw-normal my-2">Juego añadido exitosamente!</h2>
+                <p class="my-4" id = "juegoNuevoFrase">
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
