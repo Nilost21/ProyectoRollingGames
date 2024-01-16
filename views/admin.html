@@ -17,6 +17,8 @@
     />
     <link rel="stylesheet" href="../style/admin.css">
     <!-- FALTA FAVICON -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
   <body>
     <!-- ======================================================== -->
@@ -43,11 +45,13 @@
             </section>
             <table class="table table-hover text-center table-striped border-opacity-10 border border-light">
                 <thead>
-                    <tr>
+                    <tr class="align-top">
                         <th scope="col">Código</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Categoría</th>
                         <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descuento (%)</th>
                         <th scope="col">Publicado</th>
                         <th scope="col">Opciones</th>
                     </tr>
@@ -131,6 +135,22 @@
                         
                         <hr>
 
+                        <div class="row mb-3">
+                            <label for="precioJuego" class ="col-3 align-bottom">Precio:</label>
+                            <div class="col-9">
+                                <input type="number" class="form-control text-center " id="precioJuego" placeholder="$ [0 - 1000000]" min="0" max="1000000" >
+                            </div>
+                        </div>
+                            
+                        <div class="row mb-3">
+                            <label for="descuentoJuego" class ="col-6 align-bottom">Porcentaje de Descuento</label>
+                            <div class="col-6">
+                                <input type="number" class="form-control text-center " id="descuentoJuego" placeholder="% [0 - 100]" min="0" max="100">
+                            </div>
+                        </div>
+
+                        <hr>
+                        
                         <div class="row mb-3">
                             <label for="image1Juego" class="col-3 col-form-label">Image 1</label>
                             <div class="col-9">

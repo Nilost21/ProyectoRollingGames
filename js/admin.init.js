@@ -33,11 +33,15 @@ const agregarNuevoJuego = () => {
     const video1Form = document.getElementById("video1Juego");
     const video2Form = document.getElementById("video2Juego");
     const publishedForm = document.getElementById("publicadoJuego");
+    const priceForm = document.getElementById("precioJuego");
+    console.log(priceForm.value,"<--priceForm")
+    const discountPercentageForm = document.getElementById("descuentoJuego");
+    console.log(discountPercentageForm.value,"<--descuento")
 
     const frase = document.getElementById("juegoNuevoFrase");
     frase.innerHTML = `Juego: ${nombreForm.value} ahora forma parte de tu lista <i class="bi bi-emoji-sunglasses ms-3"></i>`
 
-    createJuego({name: nombreForm.value, category: categoryForm.value, description: descriptionForm.value, published: publishedForm.checked , destacado: false, image1: image1Form.value, image2: image2Form.value, video1: video1Form.value, video2: video2Form.value});
+    createJuego({name: nombreForm.value, category: categoryForm.value, description: descriptionForm.value, published: publishedForm.checked , destacado: false, image1: image1Form.value, image2: image2Form.value, video1: video1Form.value, video2: video2Form.value, price: priceForm.value, discountPercentage: discountPercentageForm.value});
 
     
     // Cerrar el modal después de agregar el juego
@@ -59,6 +63,8 @@ const agregarNuevoJuego = () => {
     video1Form.value = "";
     video2Form.value = "";
     publishedForm.value = "";
+    priceForm.value = "";
+    discountPercentageForm.value = "";
 
     renderTableBody();
 }

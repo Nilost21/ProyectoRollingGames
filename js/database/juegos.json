@@ -7,7 +7,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Botella%20deportiva%20de%20aluminio%20reutilizable.jpeg?updatedAt=1702929983622",
         "video":"",
         "id": "6c03401c-6543-11ee-8c99-0242ac120002",
-        "destacado": true
+        "destacado": true,
+        "price" : 3100,
+        "discountPercentage": 10
     },
     {
         "name" : "GTA-V",
@@ -17,7 +19,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Gorra%20Negra%20RollingCode.jpg?updatedAt=1702929987757",
         "video":"",
         "id": "6fe95464-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 15
     },
     {
         "name" : "EA FC",
@@ -27,7 +31,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Gorra%20Roja%20RollingCode.jpeg?updatedAt=1702929982983",
         "video":"",
         "id": "73d71674-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 2500,
+        "discountPercentage": false
     },
     {
         "name" : "Call of Duty: Modern Warfare 3",
@@ -37,7 +43,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Libreta.jpeg?updatedAt=1702929983689",
         "video":"",
         "id": "7722d430-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 2000,
+        "discountPercentage": false
     }
     ,   {
         "name" : "League of Legends",
@@ -47,7 +55,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Libreta%20Anotador%20RollingCode%20Labs.jpg?updatedAt=1702929987699",
         "video":"",
         "id": "7aa94bf2-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 3000,
+        "discountPercentage": 20
     },
     {
         "name" : "Puzzle and Dragons",
@@ -57,7 +67,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Llaveros%20RollingCode.jpeg?updatedAt=1702929983872",
         "video":"",
         "id": "7d297bf4-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 300,
+        "discountPercentage": false
     },
     {
         "name" : "Counter Strike 2",
@@ -67,7 +79,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Pines%20RollinCode%20BLANCO%20%20NEGRO.jpg?updatedAt=1702929987271",
         "video":"",
         "id": "7f7829d2-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 800,
+        "discountPercentage": 15
     },
     {
         "name" : "Age of Empires II",
@@ -77,7 +91,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Taza%20Coding.jpeg?updatedAt=1702929983398",
         "video":"",
         "id": "81e8d130-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 2
     },
     {
         "name" : "Elden Ring",
@@ -87,7 +103,9 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Taza%20No%20connection.jpeg?updatedAt=1702929983232",
         "video":"",
         "id": "841862ae-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 25
     }
     ,   {
         "name" : "NBA 2K24",
@@ -97,6 +115,8 @@
         "image": "https://ik.imagekit.io/jamhjw08s/Taza%20RollingCode%20Labs.jpg?updatedAt=1702929987938",
         "video":"",
         "id": "8682b31e-6543-11ee-8c99-0242ac120002",
-        "destacado": false
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 25
     }
 ]

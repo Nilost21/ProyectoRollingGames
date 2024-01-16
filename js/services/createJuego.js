@@ -2,12 +2,12 @@ import { Juego } from "../classes/juego.class.js";
 import { getJuegos } from "./getJuegos.js";
 import { setModifiedJuegos } from "./setModifiedJuegos.js";
 
-export const createJuego = ({name, category, description, published, image1, image2, video1, video2}) => {
-    console.log('createJuego llamado con:', name, category, description, published, image1, image2, video1, video2);
+export const createJuego = ({name, category, description, published, image1, image2, video1, video2, price, discountPercentage}) => {
+    console.log('createJuego llamado con:', name, category, description, published, image1, image2, video1, video2, price, discountPercentage);
     const juegos = getJuegos() || [];
     console.log(juegos,"<--juegos1: createJuego")
     
-    const nuevoJuego = new Juego({name: name, category:category, description:description, published:published, destacado: false, image1:image1, image2:image2, video1:video1, video2:video2});
+    const nuevoJuego = new Juego({name: name, category:category, description:description, published:published, destacado: false, image1:image1, image2:image2, video1:video1, video2:video2 ,price:price, discountPercentage:discountPercentage});
 
     console.log(nuevoJuego);
 

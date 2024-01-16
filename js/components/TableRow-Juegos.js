@@ -3,6 +3,7 @@ import { getJuegoIndexById } from "../services/getJuegoIndexById.js";
 import { setModifiedJuegos } from "../services/setModifiedJuegos.js";
 import { renderTableBody } from "../admin.init.js";
 import { removeJuego } from "../services/removeJuego.js";
+import { formatCurrency } from "../services/formatCurrency.js";
 import { Juego } from "../classes/juego.class.js";
 
 
@@ -15,6 +16,8 @@ const TableRowJuegos = (juego) =>{
         <td>${juego.name}</td>
         <td>${juego.category}</td>
         <td class="descripcion-column">${juego.description}</td>
+        <td>${formatCurrency(juego.price)} </td>
+        <td>${juego.discountPercentage ? juego.discountPercentage : 0}</td>
         <td>${juego.published ?
             `<div class="form-check w-100 d-flex justify-content-center m-0 p-0">
                 <input type="checkbox" class="form-check-input" checked onchange="setPublished('${juego.id}')">
@@ -87,6 +90,22 @@ const TableRowJuegos = (juego) =>{
                         <hr>
 
                         <div class="row mb-3">
+                            <label for="editarPrecioJuego-${juego.id}" class ="col-3 align-bottom">Precio:</label>
+                            <div class="col-9">
+                                <input type="number" class="form-control text-center " id="editarPrecioJuego-${juego.id}" placeholder="$ [0 - 1000000]" min="0" max="1000000" value = "${juego.price}">
+                            </div>
+                        </div>
+                            
+                        <div class="row mb-3">
+                            <label for="editarValorDescuentoJuego-${juego.id}" class ="col-6 align-bottom">Porcentaje de Descuento</label>
+                            <div class="col-6">
+                                <input type="number" class="form-control text-center " id="editarValorDescuentoJuego-${juego.id}" placeholder="% [0 - 100]" min="0" max="100" value = "${juego.discountPercentage}">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row mb-3">
                             <label for="editarImage1Juego-${juego.id}" class="col-3 col-form-label">Image 1</label>
                             <div class="col-9">
                                 <input type="text" class="form-control" id="editarImage1Juego-${juego.id}" maxlength="50" placeholder ="Ingresa la URL de la imagen" value = "${juego.image1}">
@@ -116,7 +135,7 @@ const TableRowJuegos = (juego) =>{
 
                         <hr>
 
-                        <div class="mb-3 form-check">
+                        <div class="mb-3 form-check text-start">
                             <input type="checkbox" class="form-check-input" id="editarPublicadoJuego-${juego.id}" ${juego.published ?'checked' : '' }>
                             <label class="form-check-label" for="editarPublicadoJuego-${juego.id}">Publicado</label>
                         </div>
@@ -211,6 +230,8 @@ const editJuego = (id) => {
     const video1Form = document.getElementById(`editarVideo1Juego-${id}`).value;
     const video2Form = document.getElementById(`editarVideo2Juego-${id}`).value;
     const publishedForm = document.getElementById(`editarPublicadoJuego-${id}`).checked;
+    const priceForm = document.getElementById(`editarPrecioJuego-${id}`).value;
+    const discountPercentageForm = document.getElementById(`editarValorDescuentoJuego-${id}`).value;
 
     const juegoIndex = getJuegoIndexById(id);
     console.log(juegoIndex,"<-- EDITAR Juego indice");
@@ -226,6 +247,8 @@ const editJuego = (id) => {
         juegos[juegoIndex].video1 = video1Form;
         juegos[juegoIndex].video2 = video2Form;
         juegos[juegoIndex].published = publishedForm;
+        juegos[juegoIndex].price = priceForm;
+        juegos[juegoIndex].discountPercentage = discountPercentageForm;
         setModifiedJuegos(juegos);
 
     }else{
