@@ -1,0 +1,122 @@
+[
+    {
+        "name" : "God of War",
+        "description" : "God of War es una franquicia de videojuegos hack and slash creada por SCE Santa Monica Studio y distribuida por Sony Computer Entertainment.",
+        "category" : "aventura",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Botella%20deportiva%20de%20aluminio%20reutilizable.jpeg?updatedAt=1702929983622",
+        "video":"",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120002",
+        "destacado": true,
+        "price" : 3100,
+        "discountPercentage": 10
+    },
+    {
+        "name" : "GTA-V",
+        "description" : "Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto en tercera persona desarrollado por el estudio escocés Rockstar North y distribuido por Rockstar Games. ",
+        "category" : "accion",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Gorra%20Negra%20RollingCode.jpg?updatedAt=1702929987757",
+        "video":"",
+        "id": "6fe95464-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 15
+    },
+    {
+        "name" : "EA FC",
+        "description" : "EA Sports FC 24 es un videojuego de fútbol, desarrollado por EA, y publicado por EA Sports. Este juego marca la primera entrega de la serie EA Sports FC, tras la conclusión de la asociación de EA con FIFA.",
+        "category" : "deportes",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Gorra%20Roja%20RollingCode.jpeg?updatedAt=1702929982983",
+        "video":"",
+        "id": "73d71674-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 2500,
+        "discountPercentage": false
+    },
+    {
+        "name" : "Call of Duty: Modern Warfare 3",
+        "description" : "Call of Duty: Modern Warfare III es un videojuego de disparos en primera persona desarrollado por Infinity Ward y Sledgehammer Games y publicado por Activision, lanzándose para PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S y Microsoft Windows.",
+        "category" : "shooter",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Libreta.jpeg?updatedAt=1702929983689",
+        "video":"",
+        "id": "7722d430-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 2000,
+        "discountPercentage": false
+    }
+    ,   {
+        "name" : "League of Legends",
+        "description" : "League of Legends, es un videojuego multijugador de arena de batalla en línea desarrollado y publicado por Riot Games. Inspirándose en Defense of the Ancients, un mapa personalizado para Warcraft III, los fundadores de Riot buscaron desarrollar un juego independiente del mismo",
+        "category" : "aventura",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Libreta%20Anotador%20RollingCode%20Labs.jpg?updatedAt=1702929987699",
+        "video":"",
+        "id": "7aa94bf2-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 3000,
+        "discountPercentage": 20
+    },
+    {
+        "name" : "Puzzle and Dragons",
+        "description" : "Domina el combate estratégico Conecta 3 en Puzzle Quest 3, la nueva entrega de la mundialmente famosa saga de juegos de rol y puzles. Prepárate para un viaje épico por Etheria, un peligroso reino de fantasía repleto de enemigos que conquistar y leales aliados que reclutar. Explora mazmorras míticas, descubre valioso botín y desbloquea equipamiento épico mientras te embarcas en una nueva y mítica historia para convertirte en la próxima leyenda de Puzzle Quest.",
+        "category" : "puzzle",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Llaveros%20RollingCode.jpeg?updatedAt=1702929983872",
+        "video":"",
+        "id": "7d297bf4-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 300,
+        "discountPercentage": false
+    },
+    {
+        "name" : "Counter Strike 2",
+        "description" : "Disfruta del juego de acción en línea n° 1 en el mundo. Sumérgete en el fragor de la guerra antiterrorista más realista con este archiconocido juego por equipos. Alíate con compañeros para superar misiones estratégicas, asalta bases enemigas, rescata rehenes, y recuerda que tu personaje contribuye al éxito del equipo y viceversa.",
+        "category" : "accion",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Pines%20RollinCode%20BLANCO%20%20NEGRO.jpg?updatedAt=1702929987271",
+        "video":"",
+        "id": "7f7829d2-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 800,
+        "discountPercentage": 15
+    },
+    {
+        "name" : "Age of Empires II",
+        "description" : "Age of Empires II: The Age of Kings es un videojuego de estrategia en tiempo real para computadoras personales, fue desarrollado por Ensemble Studios y distribuido por Microsoft Game Studios para los sistemas operativos Windows, Mac OS X y Konami para PlayStation 2.",
+        "category" : "estrategia",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Taza%20Coding.jpeg?updatedAt=1702929983398",
+        "video":"",
+        "id": "81e8d130-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 2
+    },
+    {
+        "name" : "Elden Ring",
+        "description" : "EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+        "category" : "accion",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Taza%20No%20connection.jpeg?updatedAt=1702929983232",
+        "video":"",
+        "id": "841862ae-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 25
+    }
+    ,   {
+        "name" : "NBA 2K24",
+        "description" : "Reúne a tu equipo y vive el pasado, presente y futuro de la cultura del baloncesto en NBA 2K24. Disfruta de un montón de acción pura y auténtica y de ilimitadas opciones personalizadas de Mi JUGADOR en Mi CARRERA. Colecciona una impresionante colección de leyendas y construye tu alineación perfecta en MyTEAM. Juega con tus equipos favoritos de la NBA y la WNBA en JUGAR YA.",
+        "category" : "deportes",
+        "published": true,
+        "image": "https://ik.imagekit.io/jamhjw08s/Taza%20RollingCode%20Labs.jpg?updatedAt=1702929987938",
+        "video":"",
+        "id": "8682b31e-6543-11ee-8c99-0242ac120002",
+        "destacado": false,
+        "price" : 3200,
+        "discountPercentage": 25
+    }
+]
