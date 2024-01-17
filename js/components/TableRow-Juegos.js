@@ -37,15 +37,16 @@ const TableRowJuegos = (juego) =>{
     </tr>
 
     <!-- Confirm Delete Modal -->
-    <div class="modal fade" id="delete-juego-modal-${juego.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade modal-lg" id="delete-juego-modal-${juego.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Confirmar Eliminación</h5>
+                <div class="modal-header text-bg-warning">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Confirmar Eliminación</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id ="delete-juego-modal-dialogo">
-                    ¿Estás seguro de que deseas eliminar el juego "${juego.name}"?
+                    <i class="bi bi-exclamation-lg display-1 text-warning"></i>    
+                    <p class="text-warning fs-3">¿Estás seguro de que deseas eliminar el juego "${juego.name}"?</p>
                 </div>
                 <div class="modal-footer" id="footer-modal">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -216,7 +217,7 @@ const eliminarJuego = (id) => {
         removeJuego(id);
         renderTableBody();
     }else{
-        console.error(`No se encontró el juego con ID ${id}.`)
+        console.error(`No se encontró el juego con ID ${id}.`);
     }
 }
 

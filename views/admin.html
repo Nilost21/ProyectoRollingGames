@@ -36,9 +36,13 @@
             </div>
         </section>
 
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------   SECCION: ADMINISTRACION DE jUEGOS   ---------------- -->
+        <!-- ----------------------------------------------------------------------- -->
         
         <section class="container-fluid px-5 mt-5 w-100 ">
-            <h2 class="border border-5 border-info rounded p-3 w-100">Administración de Juegos</h2>
+            <h2 class="border border-5 border-info rounded p-3 w-100"><i class="bi bi-joystick me-3"></i>Administración de Juegos</h2>
             
             <section class="container text-center my-5">
                 <button type="button" class="btn btn-outline-light rounded-5" data-bs-toggle = "modal" data-bs-target = "#nuevoJuegoModal">Agregar Juego nuevo<i class="ms-2 bi-plus-lg"></i></button>
@@ -80,6 +84,41 @@
                 </tbody>
             </table>
         </section>
+
+        <hr class="my-5">
+        <hr class="my-5">
+        
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ---------------   SECCION: ADMINISTRACION DE USUARIOS   --------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section class="container-fluid px-5 mt-5 w-100 ">
+            <h2 class="border border-5 border-info rounded p-3 w-100"><i class="bi bi-people me-3"></i>Administración de Usuarios</h2>
+            
+            <!-- <section class="container text-center my-5">
+                <button type="button" class="btn btn-outline-light rounded-5" data-bs-toggle = "modal" data-bs-target = "#nuevoJuegoModal">Agregar Usuario <i class="bi bi-person-plus ms-3"></i></button>
+            </section> -->
+            <table class="table table-hover text-center table-striped border-opacity-10 border border-light">
+                <thead>
+                    <tr class="align-top">
+                        <th scope="col">Id</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider" id="adminTableBodyUsuarios">
+
+                    
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- ================================================================= -->
+        <!-- //////=================>     MODALES     <=================////// -->
+        <!-- ================================================================= -->
 
         <!-- Modal - Juego Destacado -->
         <div class="modal fade text-center" id="destacar-juego-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -218,7 +257,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
     </main>
 
