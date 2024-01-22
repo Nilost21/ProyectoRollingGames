@@ -16,8 +16,9 @@
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-navbar">
-        <div class="container-fluid">
+      <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg bg-navbar p-0">
+        
           <button
             class="navbar-toggler"
             type="button"
@@ -29,12 +30,14 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand text-light fw-bold ps-3" href="#">LOGO WEB</a>
+          <a class="navbar-brand text-light fw-bold ps-3" href="#">
+            <img src="/assets/admin-logo.png" alt="logo-web" class="" height="35">
+          </a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-light fw-bold"
+                  class="nav-link active text-light fw-bold "
                   aria-current="page"
                   href="#"
                   >Inicio</a
@@ -62,14 +65,15 @@
               </svg>
             </a>
           </div>
-        </div>
       </nav>
+    </div>
       <!-- Navbar -->
     </header>
-    <section>
+    <section class="container p-0">
       <!-- Carrousel -->
 
-      <div class="container-xl ">
+      <div class="container p-0 ">
+        
         <div class="row mt-1 col-12">
           <div class="col-12 mb-3">
             <p class="text-light fw-bold ms-1 mt-5">
@@ -92,7 +96,7 @@
             </p>
           </div>
         <div class="row">
-          <div class="col-sm-12 col-md-10 d-flex flex-column  justify-content-center">
+          <div class="col-sm-12 col-md-10">
             <div class="card bg-transparent rounded-5 card-zoom">
               <img
                 src="/assets/img/Grandes/egs-prince-of-persia-lost-crown-carousel-desktop-1920x1080-c7ae57efc8ab.jpg"
@@ -100,14 +104,19 @@
                 alt="..."
               />
               <div
-                class="card-img-overlay mb-5 ps-5 text-start d-flex flex-column justify-content-end"
+                class="card-img-overlay mb-5 ps-5 d-flex flex-column justify-content-end"
               >
+
                 <img
-                  src="/assets/img/Logos/egs-prince-of-persia-lost-crown-carousel-logo-252x80-c3b63b9442da.png"
-                  alt="logo-Prince-of-Persia"
-                  class="img-fluid w-25"
-                />
-                <p class="card-text fw-bold text-dark mb-4 mt-3">
+                src="/assets/img/Logos/egs-prince-of-persia-lost-crown-carousel-logo-252x80-c3b63b9442da.png"
+                alt="logo-Prince-of-Persia"
+                class="img-fluid w-25"
+              />
+    
+                <p class="card-text fw-bold text-light mt-3">
+                  AVENTURA
+                </p>
+                <p class="card-text fw-bold text-light fs-5 ">
                   Métete en un mundo de fantasía dentro de la mitología persa
                 </p>
                 <a href="#" class="btn btn-light fw-bold fs-6 d-block w-25">
@@ -123,7 +132,7 @@
                       d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
                     />
                   </svg>
-                  COMPRAR AHORA</a
+                  VER MAS</a
                 >
               </div>
             </div>
@@ -242,22 +251,34 @@
       </div>
       <!-- Carrousel -->
       <!-- cards -->
-      <div class="container-xl">
-        <div class="row mt-5 col-12">
-          <div class="col-12">
-            <p class="text-light fw-bold ms-1 mt-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick me-2" viewBox="0 0 16 16">
-                <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
-                <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
-              </svg>
-              JUEGOS RECOMENDADOS
-            </p>
+      <div class="container pe-0 ps-0">  
+          <div class="row p-0 mt-5 col-12 ">
+            <div class="col-4 col-md-2 mt-2 pe-0">
+              <p class="text-light fw-bold ms-3 mt-4 text-center text-md-start text-lg-end pe-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick me-2 mb-1" viewBox="0 0 16 16">
+                  <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
+                  <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
+                </svg>
+                CATEGORÍA
+              </p>
+            </div>
+            <div class="col-4 col-md-8 mt-2 ps-0">
+              <p class="text-light fw-bold ms-1 mt-4 text-center text-md-start">AVENTURA</p>
+            </div>
+            <div class="col-4 col-md-2 mt-4 mb-4 d-flex flex-row justify-content-end">
+              <a href="#" class="btn btn-dark rounded-5 me-1 pb-2 pb-md-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill mb-0 pb-0" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+              </svg></a>
+              <a href="#" class="btn btn-dark rounded-5 ms-1 pb-2 pb-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill mb-0" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+              </svg></a>
+            </div>
           </div>
-          <div class="row p-0 d-flex flex-row justify-content-between">
+          <div class="row p-0 d-flex flex-row justify-content-between ">
             <!--  -->
-            <div class="col-12 col-md-4 col-lg-2">
+            <div class="col-12 col-md-4 col-lg-2 p-0 d-flex flex-sm-grow justify-content-center ">
               <div
-                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 rounded-5 border-0 mb-3 card-zoom "
+                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 p-lg-0 rounded-5 border-0 mb-3 card-zoom "
                 style="width: 18rem"
               >
                 <img
@@ -265,73 +286,79 @@
                   class="card-img-top rounded-5 p-3"
                   alt="..."
                 />
-                <div class="card-body d-flex flex-column p-4">
-                  <h5 class="card-title text-light fw-bold text-center">
+                <div class="card-body d-flex flex-column px-0 pt-0">
+                  <p class="card-text text-light fw-bold text-center mb-0">AVENTURA</p>
+                  <h5 class="card-title text-light fw-bold text-center mb-1">
                     GOST RUNNER
                   </h5>
-                  <p class="card-text text-light fw-bold text-center">
+                  <p class="card-text text-light fw-bold text-center my-1">
                     42,99 US$
                   </p>
-                  <a href="#" class="btn btn-light fw-bold">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag-heart-fill mb-1 me-1"
-                      viewBox="0 0 16 16"
+                  <div class="px-0 text-center mt-2">
+                    <a href="#" class="btn btn-light fw-bold ps-2 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-bag-heart-fill mb-1 me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                        />
+                      </svg>
+                      VER MAS</a
                     >
-                      <path
-                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-                      />
-                    </svg>
-                    VER MAS</a
-                  >
+                  </div>
                 </div>
               </div>
             </div>
             <!--  -->
             <!--  -->
-            <div class="col-12 col-md-4 col-lg-2">
+            <div class="col-12 col-md-4 col-lg-2 p-0 d-flex flex-sm-grow justify-content-center ">
               <div
-                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 rounded-5 border-0 mb-3 card-zoom"
+                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 p-lg-0 rounded-5 border-0 mb-3 card-zoom "
                 style="width: 18rem"
               >
                 <img
-                  src="/assets/img/Medianas/egs-alan-wake-2-carousel-thumb-1200x1600-c64beec29b55.jpg"
+                  src="/assets/img/medianas/egs-alan-wake-2-carousel-thumb-1200x1600-c64beec29b55.jpg"
                   class="card-img-top rounded-5 p-3"
                   alt="..."
                 />
-                <div class="card-body d-flex flex-column p-4">
-                  <h5 class="card-title text-light fw-bold text-center">
+                <div class="card-body d-flex flex-column px-0 pt-0">
+                  <p class="card-text text-light fw-bold text-center mb-0">TERROR</p>
+                  <h5 class="card-title text-light fw-bold text-center mb-1">
                     ALAN WAKE II
                   </h5>
-                  <p class="card-text text-light fw-bold text-center">
-                    31,99 US$
+                  <p class="card-text text-light fw-bold text-center my-1">
+                    32,99 US$
                   </p>
-                  <a href="#" class="btn btn-light fw-bold">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag-heart-fill mb-1 me-1"
-                      viewBox="0 0 16 16"
+                  <div class="px-0 text-center mt-2">
+                    <a href="#" class="btn btn-light fw-bold ps-2 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-bag-heart-fill mb-1 me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                        />
+                      </svg>
+                      VER MAS</a
                     >
-                      <path
-                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-                      />
-                    </svg>
-                    VER MAS</a
-                  >
+                  </div>
                 </div>
               </div>
             </div>
             <!--  -->
             <!--  -->
-            <div class="col-12 col-md-4 col-lg-2">
+            <div class="col-12 col-md-4 col-lg-2 p-0 d-flex flex-sm-grow justify-content-center ">
               <div
-                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 rounded-5 border-0 mb-3 card-zoom"
+                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 p-lg-0 rounded-5 border-0 mb-3 card-zoom "
                 style="width: 18rem"
               >
                 <img
@@ -339,36 +366,39 @@
                   class="card-img-top rounded-5 p-3"
                   alt="..."
                 />
-                <div class="card-body d-flex flex-column p-4">
-                  <h5 class="card-title text-light fw-bold text-center">
+                <div class="card-body d-flex flex-column px-0 pt-0">
+                  <p class="card-text text-light fw-bold text-center mb-0">DEPORTE</p>
+                  <h5 class="card-title text-light fw-bold text-center mb-1">
                     FIFA24
                   </h5>
-                  <p class="card-text text-light fw-bold text-center">
-                    50,99 US$
+                  <p class="card-text text-light fw-bold text-center my-1">
+                    52,99 US$
                   </p>
-                  <a href="#" class="btn btn-light fw-bold">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag-heart-fill mb-1 me-1"
-                      viewBox="0 0 16 16"
+                  <div class="px-0 text-center mt-2">
+                    <a href="#" class="btn btn-light fw-bold ps-2 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-bag-heart-fill mb-1 me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                        />
+                      </svg>
+                      VER MAS</a
                     >
-                      <path
-                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-                      />
-                    </svg>
-                    VER MAS</a
-                  >
+                  </div>
                 </div>
               </div>
             </div>
             <!--  -->
             <!--  -->
-            <div class="col-12 col-md-4 col-lg-2">
+            <div class="col-12 col-md-4 col-lg-2 p-0 d-flex flex-sm-grow justify-content-center ">
               <div
-                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 rounded-5 border-0 mb-3 card-zoom"
+                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 p-lg-0 rounded-5 border-0 mb-3 card-zoom "
                 style="width: 18rem"
               >
                 <img
@@ -376,36 +406,40 @@
                   class="card-img-top rounded-5 p-3"
                   alt="..."
                 />
-                <div class="card-body d-flex flex-column p-4">
-                  <h5 class="card-title text-light fw-bold text-center">
-                  OUTLAST
+                <div class="card-body d-flex flex-column px-0 pt-0">
+                  <p class="card-text text-light fw-bold text-center mb-0">TERROR</p>
+                  <h5 class="card-title text-light fw-bold text-center mb-1">
+                    OUTLAST
                   </h5>
-                  <p class="card-text text-light fw-bold text-center">
-                    42,99 US$
+                  <p class="card-text text-light fw-bold text-center my-1">
+                    27,99 US$
                   </p>
-                  <a href="#" class="btn btn-light fw-bold">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag-heart-fill mb-1 me-1"
-                      viewBox="0 0 16 16"
+                  <div class="px-0 text-center mt-2">
+                    <a href="#" class="btn btn-light fw-bold ps-2 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-bag-heart-fill mb-1 me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                        />
+                      </svg>
+                      VER MAS</a
                     >
-                      <path
-                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-                      />
-                    </svg>
-                    VER MAS</a
-                  >
+                  </div>
                 </div>
               </div>
             </div>
             <!--  -->
+          
             <!--  -->
-            <div class="col-12 col-md-4 col-lg-2">
+            <div class="col-12 col-md-4 col-lg-2 p-0 d-flex flex-sm-grow justify-content-center ">
               <div
-                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 rounded-5 border-0 mb-3 card-zoom"
+                class="card bg-transparent pt-5 pb-1 ps-5 pe-5 p-lg-0 rounded-5 border-0 mb-3 card-zoom "
                 style="width: 18rem"
               >
                 <img
@@ -413,37 +447,37 @@
                   class="card-img-top rounded-5 p-3"
                   alt="..."
                 />
-                <div class="card-body d-flex flex-column p-4">
-                  <h5 class="card-title text-light fw-bold text-center">
+                <div class="card-body d-flex flex-column px-0 pt-0">
+                  <p class="card-text text-light fw-bold text-center mb-0">AVENTURA</p>
+                  <h5 class="card-title text-light fw-bold text-center mb-1">
                     HADES
                   </h5>
-                  <p class="card-text text-light fw-bold text-center">
+                  <p class="card-text text-light fw-bold text-center my-1">
                     22,99 US$
                   </p>
-                  <a href="#" class="btn btn-light fw-bold">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag-heart-fill mb-1 me-1"
-                      viewBox="0 0 16 16"
+                  <div class="px-0 text-center mt-2">
+                    <a href="#" class="btn btn-light fw-bold ps-2 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-bag-heart-fill mb-1 me-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+                        />
+                      </svg>
+                      VER MAS</a
                     >
-                      <path
-                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-                      />
-                    </svg>
-                    VER MAS</a
-                  >
+                  </div>
                 </div>
               </div>
             </div>
-            <!--  -->
-          </div>
-        </div>
-      </div>
       <!-- cards -->
     </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
