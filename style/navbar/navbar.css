@@ -16,3 +16,8 @@
   .btn-rounded:hover {
     background-color: #61CDFF; /* Cambia el color de fondo al pasar el ratón por encima */
   }
+
+  input[type="text"]:focus {
+    outline: #303034;
+    color:#E6E6EA
+  }
