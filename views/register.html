@@ -78,31 +78,42 @@
     </div>
 
     <div class="row justify-content-center"> 
+      <h1 class="row justify-content-center mt-2 mb-5 text-white">Registro</h1>
       <div class="col-md-6">
-        <h1 class="mb-5 text-white">Registro</h1>
         <form class="text-white mb-5">
-          <div class="mb-3">
-            <label for="formName" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+      
+          <div class="mb-3 row">
+            <label for="formName" class="form-label col-2 text-right">Nombre:</label>
+            <div class="col-8">
+              <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+            </div>
           </div>
 
-          <div class="mb-3">
-            <label for="formSurname" class="form-label">Apellido:</label>
-            <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
+          <div class="mb-3 row">
+            <label for="formSurname" class="form-label col-2 text-right">Apellido:</label>
+            <div class="col-8">
+              <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
+            </div>
           </div>
-
-          <div class="mb-3">
-            <label for="formEmail" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
+    
+          <div class="mb-3 row">
+            <label for="formEmail" class="form-label col-2 text-right">Email:</label>
+            <div class="col-8">
+              <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
+            </div>
           </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="20" required>
-            <div id="passwordHelpBlock" class="text-white form-text">Debe tener 8 caracteres como mínimo y 20 con máximo, al menos una letra y un número</div>
+    
+          <div class="mb-3 row">
+            <label for="exampleInputPassword1" class="form-label col-2 text-right">Contraseña:</label>
+            <div class="col-8">
+              <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="20" required>
+              <div id="passwordHelpBlock" class="text-white form-text">Debe tener 8 caracteres como mínimo y 20 con máximo, al menos una letra y un número</div>
+            </div>
           </div>
           
-          <button type="submit" class="btn btn-primary">Registrarse</button>
+          <div class="text-center">
+            <button type="submit" class="btn btn-light mt-4 mx-auto">Registrarse</button>
+          </div>
         </form>
       </div>
     </div>
