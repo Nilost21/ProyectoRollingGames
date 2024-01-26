@@ -1,0 +1,38 @@
+[
+    {
+        "id": "926be29d-a324-411b-92ba-b58a471575dd",
+        "email": "admin@admin.com",
+        "password": "admin83i",
+        "role": "admin",
+        "status": "aprobado",
+        "image1": "",
+        "image2": ""
+    },
+    {
+        "id": "63dc99b9-67cc-4fb4-8c2c-1b3382f1f386",
+        "email": "bm@gmail.com",
+        "password": "12345678a",
+        "role": "user",
+        "status": "pendiente",
+        "image1": "",
+        "image2": ""
+    },
+    {
+        "id": "31f3a891-5192-4490-aa63-e5a34b87de23",
+        "email": "crack@gmail.com",
+        "password": "12345678a",
+        "role": "user",
+        "status": "aprobado",
+        "image1": "",
+        "image2": ""
+    },
+    {
+        "id": "fd8926ba-b177-48f3-8419-2e3a4287929f",
+        "email": "messi@gmail.com",
+        "password": "12345678a",
+        "role": "user",
+        "status": "suspendido",
+        "image1": "",
+        "image2": ""
+    }
+]

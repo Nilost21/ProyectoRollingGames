@@ -1,0 +1,15 @@
+#adminTableBody .destacado-row {
+    background-color: #d4c923!important; /* Cambia el color de fondo según tus preferencias */
+}
+
+/* Estilos para pantallas más pequeñas que lg */
+@media (max-width: 991px) {
+    tr .descripcion-column {
+      overflow: auto;
+      max-height: 100px; /* Ajusta esto según tus necesidades para evitar que se vuelva demasiado grande */
+    }
+  }
+
+  .form-select:hover, .form-check-input:hover {
+    cursor: pointer;
+  }

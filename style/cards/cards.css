@@ -1,0 +1,19 @@
+.bg-cards {
+    background-color: #18181C;
+}
+
+
+
+.card-zoom {
+    transition: transform 0.3s ease;
+
+  }
+  
+  .card-zoom:hover {
+    transform: scale(1.03);
+  }
+
+
+ .categoria-color {
+  color: #9A9A9A
+ }

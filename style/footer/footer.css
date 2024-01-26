@@ -1,0 +1,11 @@
+.bg-footer {
+    background-color: #18181C;
+}
+
+.categoria {
+    color: #9A9A9A
+   }
+
+.categoria:hover{
+    color: #ffff
+}
