@@ -73,34 +73,39 @@
       <!-- Navbar -->
     </header>
 
-    <div><img src="../img/logo.png" alt="Logo de página"></div>
-  
-  <h1>Registro</h1>
-
-  <form>
-    <div class="mb-3">
-      <label for="formName" class="form-label">Nombre:</label>
-      <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+    <div class="container text-center mt-5">
+      <div ><img src="../assets/admin-logo.png" alt="Logo de página" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">"</div>
     </div>
 
-    <div class="mb-3">
-      <label for="formSurname" class="form-label">Apellido:</label>
-      <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
-    </div>
+    <div class="row justify-content-center"> 
+      <div class="col-md-6">
+        <h1 class="mb-5 text-white">Registro</h1>
+        <form class="text-white mb-5">
+          <div class="mb-3">
+            <label for="formName" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+          </div>
 
-    <div class="mb-3">
-      <label for="formEmail" class="form-label">Email:</label>
-      <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
-    </div>
+          <div class="mb-3">
+            <label for="formSurname" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
+          </div>
 
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="20" required>
-      <div id="passwordHelpBlock" class="form-text">Debe tener 8 caracteres como mínimo y 20 con máximo, al menos una letra y un número</div>
+          <div class="mb-3">
+            <label for="formEmail" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="20" required>
+            <div id="passwordHelpBlock" class="text-white form-text">Debe tener 8 caracteres como mínimo y 20 con máximo, al menos una letra y un número</div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+      </div>
     </div>
-    
-    <button type="submit" class="btn btn-primary">Registrarse</button>
-    </form>
 
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
       <div class="row mt-3">
