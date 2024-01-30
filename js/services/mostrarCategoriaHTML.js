@@ -3,7 +3,7 @@ import { limpiarHTML } from '../utils/limpiarHTML.js';
 
 export const mostrarCategoriaHTML = (juegos) => {
   limpiarHTML(rowCards);
-  juegos.forEach((juego) => {
+  juegos.forEach((juego, index) => {
     const { name, id, category, price, image1 } = juego;
 
     const divCategorias = document.createElement('div');
@@ -18,8 +18,14 @@ export const mostrarCategoriaHTML = (juegos) => {
       'animacion-izquierda-derecha'
     );
 
+    if (index >= juegos.length - 2) {
+      divCategorias.classList.remove('d-flex');
+      divCategorias.classList.add('d-lg-flex'); // Agrega la clase extra
+      divCategorias.classList.add('d-none'); // Agrega la clase extra
+    }
+
     divCategorias.innerHTML = `
-      <div
+      <div id="${id}"
         class="card bg-transparent pt-5 pb-1 ps-5 pe-5 p-lg-0 border-0 mb-3 card-zoom "
         style="width: 18rem"
       >
@@ -30,7 +36,7 @@ export const mostrarCategoriaHTML = (juegos) => {
         />
         <div class="card-body d-flex flex-column px-0 pt-0">
           <p class="card-text categoria-color fw-bold text-center mb-0">${category}</p>
-          <h5 class="card-title text-light fw-bold text-center mb-1">
+          <h5 class="card-title text-light fw-bold text-center mb-1 fs-6">
             ${name}
           </h5>
           <p class="card-text categoria-color fw-bold text-center my-1">

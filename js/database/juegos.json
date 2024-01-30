@@ -27,6 +27,19 @@
         "destacado": false
     },
     {
+        "name" : "GOST RUNNER",
+        "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
+        "category" : "AVENTURA",
+        "published": true,
+        "image1": "/assets/img/Medianas/GR_Portrait_Offer_1200x1600-1200x1600-a7811e23904db375486535513d10412f.jpg",
+        "image2":"",
+        "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
+        "video2":"",
+        "price":"34,99",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120014",
+        "destacado": false
+    },
+    {
         "name" : "WUKONG",
         "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
         "category" : "AVENTURA",
@@ -52,19 +65,7 @@
         "id": "6c03401c-6543-11ee-8c99-0242ac120013",
         "destacado": false
     },
-    {
-        "name" : "GOST RUNNER",
-        "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
-        "category" : "AVENTURA",
-        "published": true,
-        "image1": "/assets/img/Medianas/GR_Portrait_Offer_1200x1600-1200x1600-a7811e23904db375486535513d10412f.jpg",
-        "image2":"",
-        "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
-        "video2":"",
-        "price":"34,99",
-        "id": "6c03401c-6543-11ee-8c99-0242ac120014",
-        "destacado": false
-    },
+  
     {
         "name" : "CYBER PUNK",
         "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
@@ -79,16 +80,16 @@
         "destacado": false
     },
     {
-        "name" : "PUBG",
+        "name" : "WITCHFIRE",
         "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
         "category" : "ACCION",
         "published": true,
-        "image1": "/assets/img/Medianas/pubg-battlegrounds-1m0lf.png",
+        "image1": "/assets/img/Medianas/witchfire-obly4.jpg",
         "image2":"",
         "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
         "video2":"",
-        "price":"22,99",
-        "id": "6c03401c-6543-11ee-8c99-0242ac120016",
+        "price":"19,99",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120026",
         "destacado": false
     },
     {
@@ -104,6 +105,20 @@
         "id": "6c03401c-6543-11ee-8c99-0242ac120017",
         "destacado": false
     },
+    {
+        "name" : "PUBG",
+        "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
+        "category" : "ACCION",
+        "published": true,
+        "image1": "/assets/img/Medianas/pubg-battlegrounds-1m0lf.png",
+        "image2":"",
+        "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
+        "video2":"",
+        "price":"22,99",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120016",
+        "destacado": false
+    },
+   
     {
         "name" : "STAR WARS",
         "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
@@ -235,19 +250,6 @@
         "destacado": true
     },
     {
-        "name" : "DEAD ISLAND",
-        "description" : "La mezcla de humor negro, terror y matanza de zombis ya está entre nosotros, California está infestada de zombis ¿Podrás contra ellos? ",
-        "category" : "DESTACADO",
-        "published": true,
-        "image1": "/assets/img/Medianas/EGS_DeadIsland2_DeepSilverDambusterStudios_S2_1200x1600-efc5201842cf642eb45f73227cd0789b.jpg",
-        "image2":"/assets/img/Grandes/egs-dead-island-2-launch-carousel-desktop-1920x1080-ac0376f37f14.jpg",
-        "video1": "https://www.youtube.com/watch?v=bX66ibydpjk",
-        "video2":"/assets/img/Logos/egs-dead-island-2-launch-carousel-logo-350x110-8e52e8b1c587.png",
-        "price":"37,99",
-        "id": "6c03401c-6543-11ee-8c99-0242ac120004",
-        "destacado": true
-    },
-    {
         "name" : "HORIZON™",
         "description" : "Disfruta del épico Horizon Forbidden West™ con todos sus contenidos adicionales y la expansion en un mundo hermoso",
         "category" : "DESTACADO",
@@ -285,7 +287,21 @@
         "price":"42,99",
         "id": "6c03401c-6543-11ee-8c99-0242ac120007",
         "destacado": true
+    },
+    {
+        "name" : "DEAD ISLAND",
+        "description" : "La mezcla de humor negro, terror y matanza de zombis ya está entre nosotros, California está infestada de zombis ¿Podrás contra ellos? ",
+        "category" : "DESTACADO",
+        "published": true,
+        "image1": "/assets/img/Medianas/EGS_DeadIsland2_DeepSilverDambusterStudios_S2_1200x1600-efc5201842cf642eb45f73227cd0789b.jpg",
+        "image2":"/assets/img/Grandes/egs-dead-island-2-launch-carousel-desktop-1920x1080-ac0376f37f14.jpg",
+        "video1": "https://www.youtube.com/watch?v=bX66ibydpjk",
+        "video2":"/assets/img/Logos/egs-dead-island-2-launch-carousel-logo-350x110-8e52e8b1c587.png",
+        "price":"37,99",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120004",
+        "destacado": true
     }
+ 
 
 
 
