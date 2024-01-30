@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/style/carrousel/carrousel.css" />
     <link rel="stylesheet" href="/style/cards/cards.css" />
     <link rel="stylesheet" href="/style/footer/footer.css" />
+    <link rel="stylesheet" href="/style/register/register.css">
   </head>
   <body>
     <header>
@@ -77,46 +78,50 @@
       <div ><img src="../assets/admin-logo.png" alt="Logo de página" class="img-fluid rounded-circle" style="width: 100px; height: 100px;">"</div>
     </div>
 
-    <div class="row justify-content-center"> 
-      <h1 class="row justify-content-center mt-2 mb-5 text-white">Registro</h1>
-      <div class="col-md-6">
-        <form class="text-white mb-5">
+    <div class="container-with-shadow mt-5 mb-5">
+      <div class="row justify-content-center"> 
+        <h1 class="row justify-content-center mt-2 mb-5 text-white">Registro de Usuario</h1>
+        <div class="col-md-6">
+          <form class="text-white mb-5">
+        
+            <div class="mb-3 row">
+              <label for="formName" class="form-label col-4 text-right">Nombre:</label>
+              <div class="col-8">
+                <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+              </div>
+            </div>
+  
+            <div class="mb-3 row">
+              <label for="formSurname" class="form-label col-4 text-right">Apellido:</label>
+              <div class="col-8">
+                <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
+              </div>
+            </div>
       
-          <div class="mb-3 row">
-            <label for="formName" class="form-label col-2 text-right">Nombre:</label>
-            <div class="col-8">
-              <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+            <div class="mb-3 row">
+              <label for="formEmail" class="form-label col-4 text-right">Email:</label>
+              <div class="col-8">
+                <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
+              </div>
             </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label for="formSurname" class="form-label col-2 text-right">Apellido:</label>
-            <div class="col-8">
-              <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
+      
+            <div class="mb-3 row">
+              <label for="exampleInputPassword1" class="form-label col-4 text-right">Contraseña:</label>
+              <div class="col-8">
+                <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="20" required>
+                <div id="passwordHelpBlock" class="text-white form-text">Debe tener 8 caracteres como mínimo y 20 con máximo, al menos una letra y un número</div>
+              </div>
             </div>
-          </div>
-    
-          <div class="mb-3 row">
-            <label for="formEmail" class="form-label col-2 text-right">Email:</label>
-            <div class="col-8">
-              <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
+            
+            <div class="text-center">
+              <button type="submit" class="btn btn-light mt-4 mx-auto">Registrarse</button>
             </div>
-          </div>
-    
-          <div class="mb-3 row">
-            <label for="exampleInputPassword1" class="form-label col-2 text-right">Contraseña:</label>
-            <div class="col-8">
-              <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="20" required>
-              <div id="passwordHelpBlock" class="text-white form-text">Debe tener 8 caracteres como mínimo y 20 con máximo, al menos una letra y un número</div>
-            </div>
-          </div>
-          
-          <div class="text-center">
-            <button type="submit" class="btn btn-light mt-4 mx-auto">Registrarse</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
+
+
 
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
       <div class="row mt-3">
