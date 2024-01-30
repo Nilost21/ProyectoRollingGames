@@ -11,7 +11,7 @@ export const carruselCategoría = async () => {
   const btnDer = document.querySelector('#btn-der');
 
   // Funciones
-  let categorias = ['AVENTURA', 'ACCION', 'DEPORTE']; // Lista de categorías
+  let categorias = ['AVENTURA', 'ACCION', 'DEPORTE', 'DESTACADO']; // Lista de categorías
   let currentIndex = 0; // Índice de la categoría actual
 
   // Evento para cambiar de categoría al presionar el botón izquierdo

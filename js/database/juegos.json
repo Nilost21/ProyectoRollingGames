@@ -170,7 +170,7 @@
         "destacado": false
     },
     {
-        "name" : "LEAGUE OF LEGENDS",
+        "name" : "LEAGUE OF LEGEND",
         "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
         "category" : "DEPORTE",
         "published": true,
@@ -211,7 +211,7 @@
     {
         "name" : "PRINCE OF PERSIA",
         "description" : "Adéntrate en un videojuego de plataforma de acción y aventura que transcurre en un mundo Persa mitológico...",
-        "category" : "AVENTURA",
+        "category" : "DESTACADO",
         "published": true,
         "image1": "/assets/img/Medianas/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg",
         "image2":"/assets/img/Grandes/egs-prince-of-persia-lost-crown-carousel-desktop-1920x1080-c7ae57efc8ab.jpg",
@@ -222,9 +222,9 @@
         "destacado": true
     },
     {
-        "name" : "AVATAR FRONTIERS™",
+        "name" : "AVATAR FRONTIERS",
         "description" : "La historia se desarrolla tras los sucesos de la primera película de Avatar, embárcate en una aventura por toda la Frontera Occidental",
-        "category" : "AVENTURA",
+        "category" : "DESTACADO",
         "published": true,
         "image1": "/assets/img/Medianas/egs-avatar-frontiers-of-pandora-carousel-thumb-1200x1600-46a421a5dfcd.jpg",
         "image2":"/assets/img/Grandes/egs-avatar-frontiers-of-pandora-carousel-desktop-1248x702-9346d193b313.jpg",
@@ -237,7 +237,7 @@
     {
         "name" : "DEAD ISLAND",
         "description" : "La mezcla de humor negro, terror y matanza de zombis ya está entre nosotros, California está infestada de zombis ¿Podrás contra ellos? ",
-        "category" : "ACCION",
+        "category" : "DESTACADO",
         "published": true,
         "image1": "/assets/img/Medianas/EGS_DeadIsland2_DeepSilverDambusterStudios_S2_1200x1600-efc5201842cf642eb45f73227cd0789b.jpg",
         "image2":"/assets/img/Grandes/egs-dead-island-2-launch-carousel-desktop-1920x1080-ac0376f37f14.jpg",
@@ -250,7 +250,7 @@
     {
         "name" : "HORIZON™",
         "description" : "Disfruta del épico Horizon Forbidden West™ con todos sus contenidos adicionales y la expansion en un mundo hermoso",
-        "category" : "AVENTURA",
+        "category" : "DESTACADO",
         "published": true,
         "image1": "/assets/img/Medianas/egs-horizon-forbidden-west-carousel-thumb-1200x1600-011a41336cf9.jpg",
         "image2":"/assets/img/Grandes/egs-horizon-forbidden-west-carousel-desktop-1920x1080-358478b6468a.jpg",
@@ -263,7 +263,7 @@
     {
         "name" : "ALAN WAKE",
         "description" : "Una serie de asesinatos y rituales amenazan Bright Falls en el nuevo Thriller psicológico de Remedy Entertainment",
-        "category" : "ACCION",
+        "category" : "DESTACADO",
         "published": true,
         "image1": "/assets/img/Medianas/descada2.jpg",
         "image2":"/assets/img/Grandes/egs-alan-wake-2-carousel-desktop-1248x702-c7cb2980c2a2.jpg",
@@ -276,7 +276,7 @@
     {
         "name" : "SKULL AND BONES",
         "description" : "Skull and Bones, es una experiencia cooperativa de rol y acción, para convertirte en un temible cabecilla pirata",
-        "category" : "ACCION",
+        "category" : "DESTACADO",
         "published": true,
         "image1": "/assets/img/Medianas/egs-skull-and-bones-carousel-thumb-1200x1600-eb9d60ded5a8.jpg",
         "image2":"/assets/img/Grandes/egs-skull-and-bones-carousel-desktop-1248x702-8814fa009b18.jpg",
