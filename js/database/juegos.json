@@ -224,6 +224,19 @@
         "destacado": false
     },
     {
+        "name" : "ALAN WAKE",
+        "description" : "Una serie de asesinatos y rituales amenazan Bright Falls en el nuevo Thriller psicológico de Remedy Entertainment",
+        "category" : "DESTACADO",
+        "published": true,
+        "image1": "/assets/img/Medianas/descada2.jpg",
+        "image2":"/assets/img/Grandes/egs-alan-wake-2-carousel-desktop-1248x702-c7cb2980c2a2.jpg",
+        "video1": "https://www.youtube.com/watch?v=RTJgkovscws",
+        "video2":"/assets/img/Logos/egs-alan-wake-2-carousel-logo-350x100-787bf79733fd.png",
+        "price":"24,99",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120006",
+        "destacado": true
+    },
+    {
         "name" : "PRINCE OF PERSIA",
         "description" : "Adéntrate en un videojuego de plataforma de acción y aventura que transcurre en un mundo Persa mitológico...",
         "category" : "DESTACADO",
@@ -262,19 +275,7 @@
         "id": "6c03401c-6543-11ee-8c99-0242ac120005",
         "destacado": true
     },
-    {
-        "name" : "ALAN WAKE",
-        "description" : "Una serie de asesinatos y rituales amenazan Bright Falls en el nuevo Thriller psicológico de Remedy Entertainment",
-        "category" : "DESTACADO",
-        "published": true,
-        "image1": "/assets/img/Medianas/descada2.jpg",
-        "image2":"/assets/img/Grandes/egs-alan-wake-2-carousel-desktop-1248x702-c7cb2980c2a2.jpg",
-        "video1": "https://www.youtube.com/watch?v=RTJgkovscws",
-        "video2":"/assets/img/Logos/egs-alan-wake-2-carousel-logo-350x100-787bf79733fd.png",
-        "price":"24,99",
-        "id": "6c03401c-6543-11ee-8c99-0242ac120006",
-        "destacado": true
-    },
+  
     {
         "name" : "SKULL AND BONES",
         "description" : "Skull and Bones, es una experiencia cooperativa de rol y acción, para convertirte en un temible cabecilla pirata",

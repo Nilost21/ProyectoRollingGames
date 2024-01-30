@@ -42,3 +42,6 @@
   filter: brightness(90%);
 }
 
+.hover-pointer {
+  cursor: pointer;
+}

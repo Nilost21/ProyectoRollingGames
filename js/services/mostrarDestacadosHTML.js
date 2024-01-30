@@ -1,9 +1,11 @@
 import { limpiarHTML } from '../utils/limpiarHTML.js';
+
+let indiceSeleccionado;
 const divColDestacados = document.querySelector('#col-destacados');
 const rowDestacadosPrincipal = document.querySelector('#row-principal');
 
 export const mostrarDestacadosHTML = (destacados) => {
-  destacados.forEach((juego) => {
+  destacados.forEach((juego, index) => {
     const { name, category, id, price, description, image1, image2, video2 } =
       juego;
 
@@ -11,11 +13,12 @@ export const mostrarDestacadosHTML = (destacados) => {
     const palabraCapitalizada = capitalizarPrimeraLetra(name);
 
     const rowDestacados = document.createElement('div');
+    rowDestacados.id = 'rowDestacados';
     rowDestacados.classList.add('row', 'px-4');
 
     rowDestacados.innerHTML = `
   
-  <a id="${id}" href="#" class="card border-0 bg-transparent py-0 ps-1 pe-0 text-light rounded-4 card-zoom text-decoration-none"
+  <div id="${id}" class="boton-destacado hover-pointer  card border-0 bg-transparent py-0 ps-1 pe-0 text-light rounded-4 card-zoom text-decoration-none"
       style="max-width: 540px"
     >
       <div class="row g-0">
@@ -36,9 +39,16 @@ export const mostrarDestacadosHTML = (destacados) => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   
   `;
+
+    rowDestacados
+      .querySelector('.boton-destacado')
+      .addEventListener('click', () => {
+        indiceSeleccionado = `${index}`;
+        console.log(indiceSeleccionado);
+      });
 
     divColDestacados.appendChild(rowDestacados);
   });
