@@ -1,8 +1,8 @@
-.container-with-shadow {
-    max-width: 570px;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    background-color: #202020;
-    border-radius: 30px;
+.container-box-register {
+  max-width: 700px; 
+  max-height: 700px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: #202020;
+  border-radius: 20px;
   }
