@@ -33,5 +33,5 @@
   
   /* Clase para aplicar la animación */
   .animacion-izquierda-derecha {
-    animation: desplazarIzquierdaDerecha 2s ease-in-out;
+    animation: desplazarIzquierdaDerecha 3s ease-in-out;
   }

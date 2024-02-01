@@ -8,6 +8,7 @@ export const seleccionPrincipal = async () => {
   const destacados = juegos
     .filter((juego) => juego.category === 'DESTACADO')
     .slice(0, 5);
+
   cardDestacado(destacados);
   mostrarDestacadosHTML(destacados);
 };

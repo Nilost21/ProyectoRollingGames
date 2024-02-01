@@ -27,7 +27,7 @@
         "destacado": false
     },
     {
-        "name" : "GOST RUNNER",
+        "name" : "GHOST RUNNER",
         "description" : "Descripción estándar para los juegos no destacados, se utiliza en caso de que los juegos sean comunes",
         "category" : "AVENTURA",
         "published": true,

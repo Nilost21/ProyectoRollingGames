@@ -1,6 +1,7 @@
 export const cardDestacado = (destacados) => {
   destacados.forEach((juego, index) => {
     const colCardPrincipal = document.querySelector('#col-card-principal');
+    const cardsDestacadas = document.querySelector('#cardsDestacados');
 
     if (index === 0) {
       const { name, category, id, price, description, image1, image2, video2 } =
@@ -9,7 +10,7 @@ export const cardDestacado = (destacados) => {
       const CardPrincipal = document.createElement('div');
       CardPrincipal.classList.add('card', 'bg-transparent', 'rounded-5');
       CardPrincipal.innerHTML = `
-              <img src="${image2}" class="card-img rounded-5" alt="..."/>
+              <img src="${image2}" class="card-img rounded-5 sombra-difuminada animacion-principal " alt="imagen-portada"/>
               <div class="card-img-overlay p-2 d-flex flex-column justify-content-between justify-content-md-around">
                 <div class="text-center text-md-start ms-md-3 mt-2 mb-5 mt-md-5">
                   <img src="${video2}" alt="logo-Prince-of-Persia" class="img-fluid w-25 animacion-izquierda-derecha"/>
