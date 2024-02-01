@@ -3,6 +3,8 @@ export const cardDestacado = (destacados) => {
     const colCardPrincipal = document.querySelector('#col-card-principal');
     const cardsDestacadas = document.querySelector('#cardsDestacados');
 
+
+    
     if (index === 0) {
       const { name, category, id, price, description, image1, image2, video2 } =
         juego;
@@ -16,8 +18,8 @@ export const cardDestacado = (destacados) => {
                   <img src="${video2}" alt="logo-Prince-of-Persia" class="img-fluid w-25 animacion-izquierda-derecha"/>
                 </div>
                 <div class="row mb-md-3 ps-md-3">
-                  <div>
-                    <p class=" card-text fw-bold text-light mt-5 text-center text-md-start mb-md-0 ps-md-4 mb-md-1">${category}</p>
+                  <div class="p-0">
+                    <p class=" card-text fw-bold text-light mt-md-5 mt-1 text-center text-md-start  mb-md-0 ps-md-4 mb-md-1">${category}</p>
                     <p class=" animacion-izquierda-derecha col-lg-3 col-md-5 card-text fw-bold text-light text-center text-sm-start mb-2 d-none d-md-grid ps-md-3 mb-md-3 fs-6">
                       ${description}
                     </p>
