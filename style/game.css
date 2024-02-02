@@ -9,7 +9,7 @@ body{
   background-color: #121212;
   color: white;
 }
-.fixed {
+.img {
   position: fixed;
   margin-left: 650px;
   margin-top: 70px;
