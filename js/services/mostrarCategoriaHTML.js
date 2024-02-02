@@ -1,6 +1,6 @@
 import { rowCards } from './carruselCategoria.js';
 import { limpiarHTML } from '../utils/limpiarHTML.js';
-
+import obtenerJuegoPorClick from '../utils/obtenerJuegoPorID.js';
 export const mostrarCategoriaHTML = (juegos) => {
   limpiarHTML(rowCards);
   juegos.forEach((juego, index) => {
@@ -43,7 +43,7 @@ export const mostrarCategoriaHTML = (juegos) => {
             ${price} US$
           </p>
           <div class="px-0 text-center mt-2">
-            <a href="#" class="btn btn-light fw-bold ps-2 ">
+            <a href="#" data-id="${id}" class="link-juego btn btn-light fw-bold ps-2 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

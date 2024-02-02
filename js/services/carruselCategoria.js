@@ -1,4 +1,5 @@
 import { obtenerJuegos } from '../utils/obtenerDatos.js';
+import obtenerJuegoPorClick from '../utils/obtenerJuegoPorID.js';
 import { mostrarCategoriaHTML } from './mostrarCategoriaHTML.js';
 export const contenedorCards = document.querySelector('#contenedor-cards');
 export const rowCards = document.querySelector('#row-cards');
@@ -6,6 +7,7 @@ export const spanCategoria = document.querySelector('#span-categoria');
 
 export const carruselCategoría = async () => {
   const juegos = await obtenerJuegos();
+ 
   // Selectores
   const btnIzq = document.querySelector('#btn-izq');
   const btnDer = document.querySelector('#btn-der');
