@@ -17,7 +17,11 @@ body{
   width: 40%;
   z-index: 1;
 }
-
+@media (min-width: 576px) {
+.fixed {
+    display: none;
+}
+}
 .requisitos {
   background-color: #f8f9fa;
   border-radius: 10px;
