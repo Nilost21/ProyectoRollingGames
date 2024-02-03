@@ -5,6 +5,7 @@ import { validateExistingEmail } from "./validators/validateExistingEmail.js";
 import { validateEmail } from "./validators/validateEmail.js";
 import { setUsuarios } from "./services/setUsuarios.js";
 import { redirectIndex } from "./utils/redirectIndex.js"
+import { createUser } from "./services/createUser.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     // NAVBAR
@@ -97,22 +98,21 @@ const emailFeedback = (email) => {
     }
 };
 
+/**
+ * 
+ * @returns Debe mostrar el modal y redirigir a otra pagina
+ */
 
-//TEST para validar email valido/invalido
+const showSuccesfulSignUpModal = () =>{
+    const modal = new bootstrap.Modal(document.getElementById('succesfulSignupModal'))
+    modal.show()
+    setTimeout(redirectIndex, 3000)
+} 
+
+
 const signUpSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Evitar el comportamiento predeterminado del formulario
 
-    const mail = document.getElementById("emailSignUpInput").value;
-
-    if (emailFeedback(mail)) {
-    }
+    showSuccesfulSignUpModal();
 }
-
-/*
-signUpFormEmail.addEventListener("input", (e) => {
-    const mail = e.target.value;
-    emailFeedback(mail);
-}); 
-*/
-
 signUpForm.addEventListener("submit", signUpSubmit);
