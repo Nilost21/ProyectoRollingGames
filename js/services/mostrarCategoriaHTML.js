@@ -40,7 +40,7 @@ export const mostrarCategoriaHTML = (juegos) => {
             ${name}
           </h5>
           <p class="card-text categoria-color fw-bold text-center my-1">
-            ${price} US$
+            ${price},99 US$
           </p>
           <div class="px-0 text-center mt-2">
             <a href="#" data-id="${id}" class="link-juego btn btn-light fw-bold ps-2 ">
