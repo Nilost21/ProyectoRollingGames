@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // FOOTER
 });
 
+const signUpFormEmail = document.getElementById("emailSignUpInput");
 const showPasswordButton = document.getElementById("showPasswordBtn");
 const signUpFormPasswordInput =  document.getElementById("emailSignUpPassword");
 const signUpFormRepeatPassword = document.getElementById("repeatSignUpPassword");
@@ -75,18 +76,36 @@ const repeatPasswordFeedback = (password,repeatPassword) =>{
     }
 }
 
+/**
+ * 
+ * @param {string} email Recibe una contraseña
+ * @returns Debe mostrar el feedback de comparación de contraseñas valida o invalida.
+ */
+
+const emailFeedback = (email) =>{
+    signUpFormEmail.classList.remove("is-valid") 
+    signUpFormEmail.classList.remove("is-invalid")
+
+    if (validateEmail(email)) {
+        signUpFormEmail.classList.add("is-valid")
+        return true
+    }
+    else {
+        signUpFormEmail.classList.add("is-invalid")
+        return false
+    }
+}
 
 
-
-//TEST para validar contraseñas iguales
+//TEST para validar email valido/invalido
 const signUpSubmit = (e) => {
     e.preventDefault();
 
-    const testPassword = document.getElementById("emailSignUpPassword").value
-    const testPassword2 = document.getElementById("repeatSignUpPassword").value
+    const testEmail = document.getElementById("emailSignUpInput").value
 
-    repeatPasswordFeedback(testPassword,testPassword2)
-    
+        if (emailFeedback(testEmail)) {
+        }
+
 }
 
 signUpForm.addEventListener("submit", signUpSubmit);
