@@ -1,8 +1,10 @@
 import { showPassword } from "./utils/showPassword.js";
 import { validateSignUpPassword } from "./validators/validateSignUpPassword.js";
 import { validateRepeatPassword } from "./validators/validateRepeatPassword.js";
+import { validateExistingEmail } from "./validators/validateExistingEmail.js";
 import { validateEmail } from "./validators/validateEmail.js";
 import { setUsuarios } from "./services/setUsuarios.js";
+import { redirectIndex } from "./utils/redirectIndex.js"
 
 document.addEventListener("DOMContentLoaded", () => {
     // NAVBAR
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // FOOTER
 });
 
-const signUpFormEmail = document.getElementById("emailSignUpInput");
+const signUpFormEmail = document.getElementById("emailSignUpInput"); 
 const showPasswordButton = document.getElementById("showPasswordBtn");
 const signUpFormPasswordInput =  document.getElementById("emailSignUpPassword");
 const signUpFormRepeatPassword = document.getElementById("repeatSignUpPassword");
@@ -82,30 +84,35 @@ const repeatPasswordFeedback = (password,repeatPassword) =>{
  * @returns Debe mostrar el feedback de comparación de contraseñas valida o invalida.
  */
 
-const emailFeedback = (email) =>{
-    signUpFormEmail.classList.remove("is-valid") 
-    signUpFormEmail.classList.remove("is-invalid")
+const emailFeedback = (email) => {
+    signUpFormEmail.classList.remove("is-valid");
+    signUpFormEmail.classList.remove("is-invalid");
 
-    if (validateEmail(email)) {
-        signUpFormEmail.classList.add("is-valid")
-        return true
+    if (validateEmail(email) && validateExistingEmail(email)) {
+        signUpFormEmail.classList.add("is-valid");
+        return true;
+    } else {
+        signUpFormEmail.classList.add("is-invalid");
+        return false;
     }
-    else {
-        signUpFormEmail.classList.add("is-invalid")
-        return false
-    }
-}
+};
 
 
 //TEST para validar email valido/invalido
 const signUpSubmit = (e) => {
     e.preventDefault();
 
-    const testEmail = document.getElementById("emailSignUpInput").value
+    const mail = document.getElementById("emailSignUpInput").value;
 
-        if (emailFeedback(testEmail)) {
-        }
-
+    if (emailFeedback(mail)) {
+    }
 }
+
+/*
+signUpFormEmail.addEventListener("input", (e) => {
+    const mail = e.target.value;
+    emailFeedback(mail);
+}); 
+*/
 
 signUpForm.addEventListener("submit", signUpSubmit);
