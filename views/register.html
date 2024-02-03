@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/style/cards/cards.css" />
     <link rel="stylesheet" href="/style/footer/footer.css" />
     <link rel="stylesheet" href="/style/register/register.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <script type="module" src="/js/register.js" defer></script>
   </head>
@@ -137,6 +138,29 @@
           </form>
         </div>
       </section>
+      <div
+      class="modal fade modal-lg"
+      id="succesfulSignupModal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body border-0">
+            <div class="text-center">
+              <i class="bi bi-check-lg display-1 text-success"></i>
+              <h2 class="fw-normal my-2">Te has registrado exitosamente!</h2>
+              <p class="my-4">
+                Te redirigiremos a nuestra pagina principal para que puedas
+                explorar todos nuestros productos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
 
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
