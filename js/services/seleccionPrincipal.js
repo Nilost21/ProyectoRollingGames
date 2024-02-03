@@ -12,4 +12,5 @@ export const seleccionPrincipal = async () => {
 
   cardDestacado(destacados);
   mostrarDestacadosHTML(destacados);
+  obtenerJuegoPorID();
 };

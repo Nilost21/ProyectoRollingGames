@@ -1,3 +1,4 @@
+import { limpiarHTML } from './limpiarHTML.js';
 import { obtenerJuegos } from './obtenerDatos.js';
 
 async function obtenerJuegoPorID() {
@@ -11,13 +12,9 @@ async function obtenerJuegoPorID() {
 
       const idJuego = e.target.dataset.id;
 
-      const juegoObtenido = juegos.filter((juego) => juego.id === idJuego);
+      const juegoObtenido = juegos.find((juego) => juego.id === idJuego);
 
-      if (juegoObtenido.length > 0) {
-        return console.log(juegoObtenido[0]);
-      } else {
-        console.log('No se encontró ningún juego con el ID:', idJuego);
-      }
+      console.log(juegoObtenido);
     });
   });
 }

@@ -9,7 +9,7 @@
         "image2":"",
         "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
         "video2":"",
-        "price":"32,99",
+        "price":32,
         "id": "6c03401c-6543-11ee-8c99-0242ac120009",
         "destacado": false
     },
@@ -198,6 +198,19 @@
         "destacado": false
     },
     {
+        "name" : "WARFRAME",
+        "description" : "Despierta como un guerrero imparable y lucha junto a tus amigos en este juego de acción gratuito en línea ",
+        "category" : "GRATIS",
+        "published": true,
+        "image1": "/assets/img/Medianas/s2_1200x1600-fbaa33fbd2ab9a531da240c574d39f07.jpg",
+        "image2":"/assets/img/Grandes/egs-warframe-gauss-prime-access-breaker-1920x1080-a2874a33f4b8.jpg",
+        "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
+        "video2":"",
+        "price":"",
+        "id": "6c03401c-6543-11ee-8c99-0242ac120025",
+        "destacado": false
+    },
+    {
         "name" : "HOMKAI IMPACT",
         "description" : "Sube al Expreso Astral y descubre las maravillas infinitas de la galaxia en este viaje lleno de emoción",
         "category" : "GRATIS",
@@ -210,20 +223,7 @@
         "id": "6c03401c-6543-11ee-8c99-0242ac120024",
         "destacado": false
     },
-    {
-        "name" : "WARFRAME",
-        "description" : "Sube al Expreso Astral y descubre las maravillas infinitas de la galaxia en este viaje lleno de emoción",
-        "category" : "GRATIS",
-        "published": true,
-        "image1": "/assets/img/Medianas/s2_1200x1600-fbaa33fbd2ab9a531da240c574d39f07.jpg",
-        "image2":"/assets/img/Grandes/egs-warframe-gauss-prime-access-breaker-1920x1080-a2874a33f4b8.jpg",
-        "video1": "https://www.youtube.com/watch?v=QdBZY2fkU-0",
-        "video2":"",
-        "price":"",
-        "id": "6c03401c-6543-11ee-8c99-0242ac120025",
-        "destacado": false
-    },
-    {
+ {
         "name" : "ALAN WAKE",
         "description" : "Una serie de asesinatos y rituales amenazan Bright Falls en el nuevo Thriller psicológico de Remedy Entertainment",
         "category" : "DESTACADO",
