@@ -1,4 +1,5 @@
 import { limpiarHTML } from '../utils/limpiarHTML.js';
+import obtenerJuegoPorID from '../utils/obtenerJuegoPorID.js';
 
 let indiceSeleccionado;
 const divColDestacados = document.querySelector('#col-destacados');
@@ -102,4 +103,5 @@ function obtenerJuegoPorId(id, juego) {
           `;
 
   colCardPrincipal.appendChild(CardPrincipal);
+  obtenerJuegoPorID();
 }
