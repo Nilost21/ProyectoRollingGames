@@ -62,5 +62,4 @@ export const cardDestacado = (destacados) => {
 
   btnDer.addEventListener('click', handleIncrement);
   btnIzq.addEventListener('click', handleDecrement);
-  obtenerJuegoPorID();
 };
