@@ -7,7 +7,7 @@ import { passwordRegex } from "./passwordRegex.js"
 
 export const validateSignUpPassword = (password) =>{
 
-    if (passwordRegex.test(password)) {
+    if (passwordRegex.test(password)) { //valida si pasa el patron importado
         return true
     }
     else {
