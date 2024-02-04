@@ -1,3 +1,4 @@
+import { generateUniqueId } from "../utils/generateIds.js";
 export class Usuario {
     constructor({email, password, status, role, image1, image2}){
         this.email = email;
@@ -7,6 +8,6 @@ export class Usuario {
         this.image1 = image1;
         this.image2 = image2;
 
-        this.id = crypto.randomUUID;
+        this.id = generateUniqueId();
     }
 }
