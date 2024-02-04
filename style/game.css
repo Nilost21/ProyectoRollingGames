@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  background-color: #121212;
+  color: white;
+}
+.img {
+  position: fixed;
+  margin-left: 650px;
+  margin-top: 70px;
+  top: 1;
+  width: 40%;
+  z-index: 1;
+}
+@media (min-width: 576px) {
+.fixed {
+    display: none;
+}
+}
+.requisitos {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+}
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.card-img-overlay h5 {
+  color: #fff;
+}
+
+.card-img-overlay p {
+  color: #d9d9d9;
+}
+
+.recommended-games h4 {
+  color: #292b2c;
+}
+
+.card-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.appstore-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  width: 300px;
+  border: 3px solid rgb(189, 189, 189);
+  background-color: rgb(15, 15, 15);
+  border-radius: 10px;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 100px -30px rgb(255, 255, 255);
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.appstore-button svg {
+  width: 45px;
+}
+.appstore-button svg path {
+  fill: white;
+  transition: all 0.3s;
+}
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s;
+}
+.top-text {
+  font-size: 13px;
+  font-weight: 600;
+}
+.bottom-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.appstore-button:hover {
+  background-color: rgb(236, 236, 236);
+  border: 3px solid rgb(138, 138, 138);
+}
+.appstore-button:hover .button-text {
+  color: black;
+}
+.appstore-button:hover svg path {
+  fill: black;
+}
+h5{
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.button1{
+margin-left: 100px;
+}
+.button {
+background-color: #ffffff00;
+color: #fff;
+width: 18.5em;
+height: 3.6em;
+border: #3654ff 0.2em solid;
+border-radius: 11px;
+text-align: center;
+transition: all 0.6s ease;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.button:hover {
+background-color: #3654ff;
+cursor: pointer;
+}
+
+.button svg {
+width: 1.6em;
+margin: -0.2em 0.8em 1em;
+position: absolute;
+display: flex;
+transition: all 0.6s ease;
+}
+
+.button:hover svg {
+transform: translateX(5px);
+}
+
+.text {
+margin: 0 1.5em
+}
+.button2 {
+background-color: #ffffff00;
+color: #fff;
+width: 18.5em;
+height: 3.6em;
+border: #ffffff 0.2em solid;
+border-radius: 11px;
+text-align: center;
+transition: all 0.6s ease;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.button2:hover {
+background-color: #ffffff;
+color: #000
+}
+
+.button2 svg {
+width: 1.6em;
+margin: -0.2em 0.8em 1em;
+position: absolute;
+display: flex;
+transition: all 0.6s ease;
+}
+
+.button2:hover svg {
+transform: translateX(5px);
+}
+
+.text {
+margin: 0 1.5em
+}
+.card{
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.requisitos{
+      background-color: #1d1d1d;
+      border-radius: 10px;
+      padding: 20px;
+  }
+
+h6{
+  color: rgb(42, 106, 245);
+  margin-top: 5px;
+}
+.radio-input {
+display: flex;
+scale: 0.15;
+transform: rotate(180deg);
+}
+
+.star {
+margin: 1em;
+appearance: none;
+--color: white;
+border-left: 6.4721359549996em solid transparent;
+border-right: 6.4721359549996em solid transparent;
+border-bottom: 4em solid var(--color);
+transform: rotate(0deg);
+cursor: pointer;
+}
+
+.star:before {
+content: "";
+border-left: 6.4721359549996em solid transparent;
+border-right: 6.4721359549996em solid transparent;
+border-top: 4em solid var(--color);
+position: absolute;
+left: -6.4721359549996em;
+transform: rotate(108deg);
+}
+
+.star:after {
+content: "";
+border-left: 6.4721359549996em solid transparent;
+border-right: 6.4721359549996em solid transparent;
+border-top: 4em solid var(--color);
+position: absolute;
+left: -6.4721359549996em;
+transform: rotate(253deg);
+}
+
+.radio-input > .star:hover ~ .star,
+.radio-input > .star:hover,
+.radio-input > .star:checked ~ .star,
+.radio-input > .star:checked {
+--color: yellow;
+}
+
+.radio-input > .star:checked ~ .star,
+.radio-input > .star:checked {
+animation: rotate 0.5s linear forwards;
+transform: rotate(360deg);
+transition: transform 0.3s;
+}
+
+@keyframes rotate {
+0% {
+  transform: rotate(0deg);
+}
+50% {
+  scale: 1.5;
+}
+100% {
+  transform: rotate(360deg);
+}
+}

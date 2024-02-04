@@ -1,1 +1,0 @@
-Esta carpeta es para agregar los productos en este caso (Juegos) en un archivo json

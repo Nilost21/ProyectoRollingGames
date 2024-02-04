@@ -1,6 +1,7 @@
 let currentState = false;
 
 export const showPassword = (e) => {
+
   e.preventDefault();
 
   const button = e.target.id === "icon" ? e.target.parentElement : e.target;
