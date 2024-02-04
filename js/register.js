@@ -111,8 +111,19 @@ const showSuccesfulSignUpModal = () =>{
 
 
 const signUpSubmit = (e) => {
-    e.preventDefault(); // Evitar el comportamiento predeterminado del formulario
+    e.preventDefault();
 
-    showSuccesfulSignUpModal();
+    //tomar los datos de los input
+    const email = signUpFormEmail.value;
+    const password = signUpFormPasswordInput.value;
+    const repeatPassword = signUpFormRepeatPassword.value;
+
+    if (emailFeedback(email) && passwordFeedback(password) && repeatPasswordFeedback(password, repeatPassword)) {
+
+        createUser({email,password}); //manda un objeto email+password
+        showSuccesfulSignUpModal();
+    } else {
+        alert("Error en la validación");
+    }
 }
 signUpForm.addEventListener("submit", signUpSubmit);
