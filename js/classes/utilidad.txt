@@ -1,1 +1,0 @@
-En esta carpeta podremos ir creando las clases en las que vamos a ir basando nuestros nuevos objetos
