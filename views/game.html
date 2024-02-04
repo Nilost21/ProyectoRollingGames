@@ -1,156 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../style/game.css" />
-    <link rel="stylesheet" href="/style/cards/cards.css" />
-    <link rel="stylesheet" href="/style/navbar/navbar.css" />
-    <link rel="stylesheet" href="/style/footer/footer.css" />
-    <title>Game</title>
-  <body>
-    <header>
-        <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-navbar p-0">
-          
-            <button
-              class="navbar-toggler text-light bg-light ms-2"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon text-light"></span>
-            </button>
-            <a class="navbar-brand  ps-4 py-lg-2" href="#">
-              <img src="/assets/admin-logo.png" alt="logo-web" class="" height="40">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link categoria-color fw-bold ms-2 "
-                    aria-current="page"
-                    href="#"
-                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mb-1 me-2" viewBox="0 0 16 16">
-                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-                    </svg> Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold categoria-color ms-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mb-1 me-1 bi bi-cart-fill" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                  </svg> Tienda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold categoria-color ms-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mb-1 me-1 bi bi-people-fill" viewBox="0 0 16 16">
-                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                  </svg> Nosotros</a>
-                </li>
-              </ul>
-              <div class="p-1">
-                <a href="#" class="btn bg-dark text-light fw-bold rounded-5 border-0 ">Registrarse</a>
-              </div>
-              <div class="p-1">
-                <a href="#" class="btn bg-light text-dark fw-bold rounded-5 me-1 border-0 ">Ingresar</a>
-              </div>
-             <div class="pe-3 pt-2 ">
-              <a href="#" class="text-secondary btn-navbar rounded-5 pt-1 ms-3 d-none d-md-flex flex-row justify-content-center mb-md-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-person mb-2"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
-                  />
-                </svg>
-              </a>
-             </div>
-            </div>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/game.css">
+    <link rel="stylesheet" href="../style/navbar/navbar.css">
+    <link rel="stylesheet" href="../style/footer/footer.css">
+    <title>Rolling Games | Games</title>
+</head>
+<body>
+    <div class="container">
       </div>
       </header>
     <div id="contenedor-video-game" class="container p-0">
-        <div class="row p-0">
-          <h1 class="col-12 mb-4 fw-bold fs-2 mt-1 ms-lg-5 mt-lg-3">FIFA 24</h1>
-        </div>
-        <div class="row px-0">
-          <div
-            class="col-lg-9 col-md-6 col-sm-12 d-flex px-0 d-flex flex-row justify-content-center"
-          >
-            <iframe
-              width="900"
-              height="525"
-              src="https://www.youtube.com/embed/-vL01jbgENE?si=NBE1J4oBM4qUEWCF&autoplay=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
-              allowfullscreen
-              class="autoplay"
-            ></iframe>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-12 px-0 d-flex flex-row justify-content-center"
-          >
-            <div
-              id="${id}"
-              class="card pt-5 bg-transparent p-lg-0 border-0"
-              style="width: 18rem"
-            >
-              <img
-                src="/assets/img/Medianas/egs-fc24-carousel-thumb-1200x1600-362396296322.jpg"
-                class="card-img-top"
-                alt="card-submenu"
-              />
-              <div class="card-body d-flex flex-column px-0 pt-0 pb-1">
-                <p
-                  class="card-text categoria-color fw-bold text-center mb-0 mt-1"
-                >
-                  DEPORTES
-                </p>
-                <h5 class="card-title text-light fw-bold text-center mb-1 fs-6">
-                  FIFA 24
-                </h5>
-                <p class="card-text categoria-color fw-bold text-center my-1">
-                  24,99 US$
-                </p>
-                <div class="px-0 text-center mt-1">
-                  <a
-                    href="#"
-                    data-id="${id}"
-                    class="link-juego btn btn-light fw-bold ps-2"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag-heart-fill mb-1 me-1"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
-                      />
-                    </svg>
-                    COMPRAR</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
      
       </div>
       <!-- cards juegos recomendados-->
