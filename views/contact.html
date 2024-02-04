@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/style/carrousel/carrousel.css" />
     <link rel="stylesheet" href="/style/cards/cards.css" />
     <link rel="stylesheet" href="/style/footer/footer.css" />
+    <link rel="stylesheet" href="/style/contact/contact.css" />
   </head>
   <body>
     <header>
@@ -73,69 +74,75 @@
       <!-- Navbar -->
     </header>
 
-    <div class="container text-center mt-5">
-      <img src="../assets/admin-logo.png" alt="" class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
-
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form action="" class="text-light mt-5 mb-5">
-            <h1 class="text-center mb-4">Formulario de consulta</h1>
-            <div class="mb-3 row">
-              <label for="formName" class="form-label col-2 text-right">Nombre:</label>
-              <div class="col-8">
-                <input type="text" class="form-control" id="formName" aria-describedby="nameHelp" minlength="4" required>
+    <main>
+      <section class="container vh-100 mt-5 w-100 d-flex justify-content-center">
+        <div class="box-register">
+          <form id="signUpForm">
+            <div class="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
+              <img src="/assets/login-logo.png" class="img-fluid w-25" alt="logo de pagina" />
+              <div class="ms-4 text-start text-white">
+                <h1 class="">Contacto</h1>
               </div>
             </div>
-          
-            <div class="mb-3 row">
-              <label for="formSurname" class="form-label col-2 text-right">Apellido:</label>
-              <div class="col-8">
-                <input type="text" class="form-control" id="formSurname" aria-describedby="surnameHelp" minlength="2" required>
+            <div class="mb-4 position-relative">
+              <label for="emailContact" class="form-label text-light">Ingrese un Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailContact"
+                name="email"
+                maxlength="30"
+              />
+              <div class="invalid-feedback">
+                El email ingresado es invalido
               </div>
             </div>
-          
-            <div class="mb-3 row">
-              <label for="formEmail" class="form-label col-2 text-right">Email:</label>
-              <div class="col-8">
-                <input type="email" class="form-control" id="formEmail" aria-describedby="emailHelp" placeholder="nombre@mail.com" minlength="4" required>
-              </div>
+  
+            <label for="nameContact" class="form-label text-light">Ingrese su nombre</label>
+            <div class="input-group mb-1 position-relative">
+              <input
+                type="password"
+                class="form-control"
+                id="nameContact"
+                name="password"
+                maxlength="10"
+              />
             </div>
-          
-            <div class="mb-3 row">
-              <label for="formControlTextarea1" class="form-label col-2 text-right">Comentario:</label>
-              <div class="col-8">
-                <textarea class="form-control" id="formControlTextarea1" rows="3" placeholder="Dejanos tu comentario aquí.."></textarea>
-              </div>
+            <label for="comment" class="form-label text-light">Ingrese su Comentario</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
             </div>
-          
-            <div class="text-center">
-              <button type="submit" class="btn btn-light" data-toggle="modal" data-target="#miModal">Enviar</button>
-            </div>
-          </form>
-
-        </div>
-      </div>
-
-      <!-- Contenido del modal -->
-      <div class="modal" id="miModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Contacto</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+            <div class="d-flex align-items-center">
+              <button id="button-submit" type="submit" class=" btn btn-secondary mt-4">
+                Enviar
               </button>
             </div>
-            <div class="modal-body">
-              <p>Tu comentario fue enviado correctamente. Alguien de soporte se comunicara a la brevedad para 
-                resolver tu problema.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </form>
+        </div>
+      </section>
+      <div
+      class="modal fade modal-lg"
+      id="succesfulSignupModal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body border-0">
+            <div class="text-center">
+              <i class="bi bi-check-lg display-1 text-success"></i>
+              <h2 class="fw-normal my-2">Te has registrado exitosamente!</h2>
+              <p class="my-4">
+                Te redirigiremos a la pagina de Login. Podrás ingresar cuando el Administrador apruebe tu cuenta.
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    </main>
   
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
       <div class="row mt-3">
