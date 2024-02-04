@@ -17,104 +17,137 @@
     />
     <link rel="stylesheet" href="/style/navbar/navbar.css" />
     <link rel="stylesheet" href="/style/footer/footer.css" />
-
+    <link rel="stylesheet" href="../style/login.css">
     <!-- FALTA FAVICON -->
     
 </head>
 <body>
     <!-- Navbar -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-navbar p-0">
-          
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand  ps-4 py-lg-2" href="#">
-              <img src="/assets/admin-logo.png" alt="logo-web" class="" height="40">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link categoria-color fw-bold  "
-                    aria-current="page"
-                    href="#"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold categoria-color" href="#">Tienda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold categoria-color" href="#">Nosotros</a>
-                </li>
-              </ul>
-             <div class="pe-2 pt-2">
-              <a href="#" class="text-secondary btn-navbar rounded-5 pt-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-person mb-2"
-                  viewBox="0 0 16 16"
+    <header>
+      <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg bg-navbar p-0">
+        
+          <button
+            class="navbar-toggler text-light ms-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon text-light"></span>
+          </button>
+          <a class="navbar-brand  ps-4 py-lg-2" href="#">
+            <img src="/assets/admin-logo.png" alt="logo-web" class="" height="40">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link categoria-color fw-bold ms-2 "
+                  aria-current="page"
+                  href="#"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill mb-1 me-2" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                  </svg> Inicio</a
                 >
-                  <path
-                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
-                  />
-                </svg>
-              </a>
-             </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold categoria-color ms-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mb-1 me-1 bi bi-cart-fill" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg> Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold categoria-color ms-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mb-1 me-1 bi bi-people-fill" viewBox="0 0 16 16">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                </svg> Nosotros</a>
+              </li>
+            </ul>
+            <!-- <div class="p-1">
+              <a href="#" class="btn bg-dark text-light fw-bold rounded-5 border-0 ">Registrarse</a>
             </div>
-        </nav>
-      </div>
+            <div class="p-1">
+              <a href="#" class="btn bg-light text-dark fw-bold rounded-5 me-1 border-0 ">Ingresar</a>
+            </div>
+           <div class="pe-3 pt-2 ">
+            <a href="#" class="text-secondary btn-navbar rounded-5 pt-1 ms-3 d-none d-md-flex flex-row justify-content-center mb-md-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person mb-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                />
+              </svg>
+            </a>
+           </div> -->
+          </div>
+      </nav>
+    </div>
+    </header>
         <!-- Navbar -->
 
-    <section class="container d-flex justify-content-center vh-100 mt-4 mt-sm-5 w-100 mb-0">
-        <form action="" id="login_form">
 
-            <div class="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
-                <img src="../assets/login-logo.png" alt="login-logo" class="img-fluid w-25">
-                <div class="ms-4 text-start">
-                    <h1 class="display-5 fw-semibold">Rolling Games</h1>
-                    <h4 class="display-6 ">LogIn</h4>
-                </div>
-            </div>
+        <div class="e-card playing">
+          <div class="image"></div>
+          
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          
+        
+              <div class="infotop">
+        
+                <!-- IMPORTANTE! -->
+                <section class="container d-flex justify-content-center vh-100 mt-4 mt-sm-5 w-100 mb-0">
+                  <form action="" id="login_form">
+          
+                      <div class="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
+                          <img src="../assets/login-logo.png" alt="login-logo" class="img-fluid w-25">
+                          <div class="ms-4 text-start">
+                              <h1 class="display-5 fw-semibold">Rolling Games</h1>
+                              <h4 class="display-6 ">LogIn</h4>
+                          </div>
+                      </div>
+          
+                      <div class="mb-3">
+                          <label for="login_email" class="form-label">Ingrese su Email</label>
+                          <input type="email" class="form-control" name="email" id="login_email" maxlength="30">
+                      </div>
+          
+                      <label for="login_password" class="form-label">Ingrese su contraseña</label>
+                      <div class="input-group mb-3">
+                          <input type="password" class="form-control" name="password" id="login_password" maxlength="20">
+                          <button class="btn btn-dark border  border-start-0 input-group-text" id = "showPasswordBtn">
+                              <i id="icon" class="bi bi-eye-slash"></i>
+                          </button>
+                      </div>
+          
+                      <div class="invalid-feedback d-flex mb-2" id = "login_feedback_invalido" style="visibility: hidden">
+                          <i class="bi bi-exclamation-circle me-2"></i> 
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                          <button type="submit" class="ms-auto btn btn-secondary">Ingresar</button>
+                      </div>
+                      <hr>
+                      <div class="d-flex text-center justify-content-between ">
+                          <a href="/views/register.html" class="col-5 ms-4">Aún no posee una cuenta? Registrate!</a>
+                          <a href="/views/404.html" class="col-5 me-4">No recuerdas tu contraseña?</a>
+                      </div>
+                  </form>
+              </section>
+              <!-- IMPORTANTE! -->
 
-            <div class="mb-3">
-                <label for="login_email" class="form-label">Ingrese su Email</label>
-                <input type="email" class="form-control" name="email" id="login_email" maxlength="30">
             </div>
+        </div>
 
-            <label for="login_password" class="form-label">Ingrese su contraseña</label>
-            <div class="input-group mb-3">
-                <input type="password" class="form-control" name="password" id="login_password" maxlength="20">
-                <button class="btn btn-dark border  border-start-0 input-group-text" id = "showPasswordBtn">
-                    <i id="icon" class="bi bi-eye-slash"></i>
-                </button>
-            </div>
-
-            <div class="invalid-feedback d-flex mb-2" id = "login_feedback_invalido" style="visibility: hidden">
-                <i class="bi bi-exclamation-circle me-2"></i> 
-            </div>
-            <div class="d-flex align-items-center mb-3">
-                <button type="submit" class="ms-auto btn btn-secondary">Ingresar</button>
-            </div>
-            <hr>
-            <div class="d-flex text-center justify-content-between ">
-                <a href="/views/register.html" class="col-5 ms-4">Aún no posee una cuenta? Registrate!</a>
-                <a href="/views/404.html" class="col-5 me-4">No recuerdas tu contraseña?</a>
-            </div>
-        </form>
-    </section>
+    
+      
 
     <!-- FOOTER -->
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
