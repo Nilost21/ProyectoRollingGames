@@ -284,3 +284,7 @@ body{
      #button-submit:where(:hover, :focus) {
        color: #fff;
      }
+
+     textarea {
+        resize: none;
+    }

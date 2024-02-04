@@ -94,33 +94,27 @@
                       <img src="../assets/login-logo.png" alt="login-logo" class="img-fluid w-25">
                       <div class="ms-4 text-start">
                           <h1 class="display-5 fw-semibold">Rolling Games</h1>
-                          <h4 class="display-6 ">LogIn</h4>
+                          <h4 class="display-6 ">Contacto</h4>
                       </div>
                   </div>
       
                   <div class="mb-3">
-                      <label for="login_email" class="form-label">Ingrese su Email</label>
-                      <input type="email" class="form-control" name="email" id="login_email" maxlength="30">
+                      <label for="contact_email" class="form-label">Ingrese su Email</label>
+                      <input type="email" class="form-control" name="email" id="contact_email" maxlength="30" required>
                   </div>
       
-                  <label for="login_password" class="form-label">Ingrese su contraseña</label>
+                  <label for="contact_name" class="form-label">Ingrese su Nombre</label>
                   <div class="input-group mb-3">
-                      <input type="password" class="form-control" name="password" id="login_password" maxlength="20">
-                      <button class="btn btn-dark border  border-start-0 input-group-text" id = "showPasswordBtn">
-                          <i id="icon" class="bi bi-eye-slash"></i>
-                      </button>
+                      <input type="text" class="form-control" name="password" id="contact_name" maxlength="20" required>
                   </div>
-      
-                  <div class="invalid-feedback d-flex mb-2" id = "login_feedback_invalido" style="visibility: hidden">
-                      <i class="bi bi-exclamation-circle me-2"></i> 
-                  </div>
-                  <div class="d-flex align-items-center mb-3">
-                      <button type="submit" id="button-submit" class="ms-auto btn btn-secondary">Ingresar</button>
+
+                  <label for="comment" class="form-label">Su Comentario</label>
+                  <div class="input-group mb-3">
+                      <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Escriba su comentario aquí"></textarea>
                   </div>
                   <hr>
-                  <div class="d-flex text-center justify-content-between ">
-                      <a href="/views/register.html" class="col-5 ms-4">Aún no posee una cuenta? Registrate!</a>
-                      <a href="/views/404.html" class="col-5 me-4">No recuerdas tu contraseña?</a>
+                  <div class="d-flex ali mb-3">
+                      <button type="submit" id="button-submit" class="ms-auto btn btn-secondary">Enviar</button>
                   </div>
               </form>
           </section>
