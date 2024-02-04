@@ -1,9 +1,17 @@
 import { Usuario } from "../classes/usuario.class.js";
+import { generateUniqueId } from "../utils/generateIds.js";
 
 export const createUser = ({ email, password }) => {
-    const users = JSON.parse(localStorage.getItem("Usuarios"));
-    const newUser = new Usuario({ email: email, password: password,role: "user", status: "pendiente"});
+    const users = JSON.parse(localStorage.getItem("usuarios"));
+    const newUser = new Usuario({
+          id: generateUniqueId(),
+          email: email,
+          image1: "",
+          image2: "",
+          password: password,
+          role: "user", 
+          status: "pendiente",
+        });
     users.push(newUser);
-    localStorage.setItem("Usuarios", JSON.stringify(users));
-  }; 
-  
+    localStorage.setItem("usuarios", JSON.stringify(users));
+  };
