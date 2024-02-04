@@ -1,6 +1,7 @@
 import { rowCards } from './carruselCategoria.js';
 import { limpiarHTML } from '../utils/limpiarHTML.js';
 import obtenerJuegoPorClick from '../utils/obtenerJuegoPorID.js';
+
 export const mostrarCategoriaHTML = (juegos) => {
   limpiarHTML(rowCards);
   juegos.forEach((juego, index) => {

@@ -7,20 +7,16 @@ export const spanCategoria = document.querySelector('#span-categoria');
 
 export const carruselCategoría = async () => {
   const juegos = await obtenerJuegos();
- 
-  // Selectores
+
   const btnIzq = document.querySelector('#btn-izq');
   const btnDer = document.querySelector('#btn-der');
 
-  // Funciones
-  let categorias = ['AVENTURA', 'ACCION', 'DEPORTE', 'DESTACADO']; // Lista de categorías
-  let currentIndex = 0; // Índice de la categoría actual
+  let categorias = ['AVENTURA', 'ACCION', 'DEPORTE', 'DESTACADO'];
+  let currentIndex = 0;
 
-  // Seleccionar una categoría aleatoria como la primera
   const indiceAleatorio = Math.floor(Math.random() * categorias.length);
   currentIndex = indiceAleatorio;
 
-  // Evento para cambiar de categoría al presionar el botón izquierdo
   btnIzq.addEventListener('click', (e) => {
     e.preventDefault();
     currentIndex = (currentIndex - 1 + categorias.length) % categorias.length;
@@ -28,7 +24,6 @@ export const carruselCategoría = async () => {
     actualizarCategoria(categorias[currentIndex]);
   });
 
-  // Evento para cambiar de categoría al presionar el botón derecho
   btnDer.addEventListener('click', (e) => {
     e.preventDefault();
     currentIndex = (currentIndex + 1) % categorias.length;
@@ -36,11 +31,9 @@ export const carruselCategoría = async () => {
     actualizarCategoria(categorias[currentIndex]);
   });
 
-  // Función para mostrar los juegos de una categoría dada
   const mostrarJuegosCategoria = (categoria) => {
     let juegosCategoria;
 
-    // Si la categoría es 'ALEATORIA', selecciona 5 juegos aleatorios de otras categorías
     if (categoria === 'ALEATORIA') {
       const juegosOtrasCategorias = juegos.filter(
         (juego) => !categorias.includes(juego.category)
@@ -64,12 +57,10 @@ export const carruselCategoría = async () => {
     }, 2000);
   };
 
-  // Mostrar la primera categoría seleccionada aleatoriamente
   mostrarJuegosCategoria(categorias[currentIndex]);
   actualizarCategoria(categorias[currentIndex]);
 };
 
-// Función para seleccionar juegos aleatorios
 const seleccionarJuegosAleatorios = (juegos, cantidad) => {
   const juegosAleatorios = [];
   const copiaJuegos = [...juegos];
