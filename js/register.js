@@ -4,7 +4,7 @@ import { validateRepeatPassword } from "./validators/validateRepeatPassword.js";
 import { validateExistingEmail } from "./validators/validateExistingEmail.js";
 import { validateEmail } from "./validators/validateEmail.js";
 import { setUsuarios } from "./services/setUsuarios.js";
-import { redirectIndex } from "./utils/redirectIndex.js"
+import { redirectLogin } from "./utils/redirectLogin.js"
 import { createUser } from "./services/createUser.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -106,7 +106,7 @@ const emailFeedback = (email) => {
 const showSuccesfulSignUpModal = () =>{
     const modal = new bootstrap.Modal(document.getElementById('succesfulSignupModal'))
     modal.show()
-    setTimeout(redirectIndex, 3000)
+    setTimeout(redirectLogin, 3000)
 } 
 
 /**
