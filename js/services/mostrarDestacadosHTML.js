@@ -108,6 +108,9 @@ function obtenerJuegoPorId(id, juego) {
 
   btnDestacado.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(juego);
+
+    const url = `views/game.html?id=${juego.id}&nombre=${juego.name}`;
+
+    window.location.href = url;
   });
 }
