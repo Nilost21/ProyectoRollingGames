@@ -9,10 +9,9 @@ import { setUsuarios } from "./services/setUsuarios.js";
 import { getUsers } from "./services/getUsers.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // NAVBAR
     setJuegos();
     setUsuarios();
-    //protectedAdminRoute();
+    protectedAdminRoute();
     renderTableBody();
 });
 
