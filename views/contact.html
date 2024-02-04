@@ -74,76 +74,63 @@
       <!-- Navbar -->
     </header>
 
-    <main>
-      <section class="container vh-100 mt-5 w-100 d-flex justify-content-center">
-        <div class="box-register">
-          <form id="signUpForm">
-            <div class="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
-              <img src="/assets/login-logo.png" class="img-fluid w-25" alt="logo de pagina" />
-              <div class="ms-4 text-start text-white">
-                <h1 class="">Contacto</h1>
-              </div>
-            </div>
-            <div class="mb-4 position-relative">
-              <label for="emailContact" class="form-label text-light">Ingrese un Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="emailContact"
-                name="email"
-                maxlength="30"
-              />
-              <div class="invalid-feedback">
-                El email ingresado es invalido
-              </div>
-            </div>
-  
-            <label for="nameContact" class="form-label text-light">Ingrese su nombre</label>
-            <div class="input-group mb-1 position-relative">
-              <input
-                type="password"
-                class="form-control"
-                id="nameContact"
-                name="password"
-                maxlength="10"
-              />
-            </div>
-            <label for="comment" class="form-label text-light">Ingrese su Comentario</label>
-            <textarea id="comment" name="comment" rows="4" required></textarea>
-              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <button id="button-submit" type="submit" class=" btn btn-secondary mt-4">
-                Enviar
-              </button>
-            </div>
-          </form>
+
+
+    <div class="e-card playing">
+      <div class="image"></div>
+      
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      
+    
+          <div class="infotop">
+    
+            <!-- IMPORTANTE! -->
+            <section class="container d-flex justify-content-center vh-100 mt-4 mt-sm-5 w-100 mb-0">
+              <form action="" id="login_form">
+      
+                  <div class="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
+                      <img src="../assets/login-logo.png" alt="login-logo" class="img-fluid w-25">
+                      <div class="ms-4 text-start">
+                          <h1 class="display-5 fw-semibold">Rolling Games</h1>
+                          <h4 class="display-6 ">LogIn</h4>
+                      </div>
+                  </div>
+      
+                  <div class="mb-3">
+                      <label for="login_email" class="form-label">Ingrese su Email</label>
+                      <input type="email" class="form-control" name="email" id="login_email" maxlength="30">
+                  </div>
+      
+                  <label for="login_password" class="form-label">Ingrese su contraseña</label>
+                  <div class="input-group mb-3">
+                      <input type="password" class="form-control" name="password" id="login_password" maxlength="20">
+                      <button class="btn btn-dark border  border-start-0 input-group-text" id = "showPasswordBtn">
+                          <i id="icon" class="bi bi-eye-slash"></i>
+                      </button>
+                  </div>
+      
+                  <div class="invalid-feedback d-flex mb-2" id = "login_feedback_invalido" style="visibility: hidden">
+                      <i class="bi bi-exclamation-circle me-2"></i> 
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                      <button type="submit" id="button-submit" class="ms-auto btn btn-secondary">Ingresar</button>
+                  </div>
+                  <hr>
+                  <div class="d-flex text-center justify-content-between ">
+                      <a href="/views/register.html" class="col-5 ms-4">Aún no posee una cuenta? Registrate!</a>
+                      <a href="/views/404.html" class="col-5 me-4">No recuerdas tu contraseña?</a>
+                  </div>
+              </form>
+          </section>
+          <!-- IMPORTANTE! -->
+
         </div>
-      </section>
-      <div
-      class="modal fade modal-lg"
-      id="succesfulSignupModal"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body border-0">
-            <div class="text-center">
-              <i class="bi bi-check-lg display-1 text-success"></i>
-              <h2 class="fw-normal my-2">Te has registrado exitosamente!</h2>
-              <p class="my-4">
-                Te redirigiremos a la pagina de Login. Podrás ingresar cuando el Administrador apruebe tu cuenta.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    </main>
   
+
+
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
       <div class="row mt-3">
         <div class="col-12 col-md-4 p-0 text-center mb-3">
