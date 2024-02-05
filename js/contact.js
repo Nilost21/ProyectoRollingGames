@@ -1,14 +1,13 @@
 import { validateEmail } from "./validators/validateEmail.js";
-import { redirectIndex } from "./utils/redirectIndex.js"
+import { redirectIndex } from "./utils/redirectIndex.js";
 
-const contactMail =  document.getElementById("contact_email");
+const contactMail = document.getElementById("contact_email");
 const signUpForm = document.getElementById("contact_form");
-
 
 /**
  * 
- * @param {string} email Recibe una contraseña
- * @returns Debe mostrar el feedback de comparación de contraseñas valida o invalida.
+ * @param {string} email Recibe un correo electrónico
+ * @returns Debe mostrar el feedback de comparación de correos válidos o inválidos.
  */
 
 const emailFeedback = (email) => {
@@ -26,31 +25,32 @@ const emailFeedback = (email) => {
 
 /**
  * 
- * @returns Debe mostrar el modal y redirigir a otra pagina
+ * Muestra el modal y redirige a otra página después de 3 segundos.
  */
+const showSuccessfulSignUpModal = () => {
+    const modal = new bootstrap.Modal(document.getElementById('contactModal'));
+    modal.show();
+    setTimeout(() => {
+        modal.hide();
+        redirectIndex();
+    }, 7000); // Reduced the delay to 2 seconds
+};
 
-const showSuccesfulSignUpModal = () =>{
-    const modal = new bootstrap.Modal(document.getElementById('succesfulSignupModal'))
-    modal.show()
-    setTimeout(redirectIndex, 3000)
-} 
 
 /**
  * 
- * Valida el formulario y si todo esta OK muestra el modal y te lleva al index
+ * Valida el formulario y, si todo está OK, muestra el modal y te lleva al índice.
  */
 const signUpSubmit = (e) => {
     e.preventDefault();
 
-    //Toma los datos de los input
+    // Toma los datos de los input
     const email = contactMail.value;
-
+    
     if (emailFeedback(email)) {
-        alert("todo bien validado")
-        showSuccesfulSignUpModal();
+        showSuccessfulSignUpModal();
     } else {
-        alert("Error en la validación");
+        alert("Error en la validación. Ingrese un email en formato válido");
     }
 }
-
 signUpForm.addEventListener("submit", signUpSubmit);
