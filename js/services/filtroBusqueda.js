@@ -9,7 +9,7 @@ export const liInput = document.querySelector('#li-input');
 export const filtroBusqueda = async () => {
   const juegos = await obtenerJuegos();
 
-  let timeoutId; // Variable para almacenar el ID del temporizador
+  let timeoutId;
 
   inputBusqueda.addEventListener('input', function () {
     const valorBusqueda = inputBusqueda.value.trim().toLowerCase();
