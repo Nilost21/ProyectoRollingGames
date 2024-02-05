@@ -59,15 +59,15 @@
 @keyframes desplazarIzquierdaDerecha2 {
   0% {
     transform: translateX(-1%);
-    opacity: 0; /* Comienza con opacidad 0 al inicio */
+    opacity: 0;
   }
   100% {
     transform: translateX(0%);
-    opacity: 1; /* Aparece completamente al final */
+    opacity: 1; 
   }
 }
 
-/* Clase para aplicar la animación */
+
 .animacion-principal {
   animation: desplazarIzquierdaDerecha2 3s ease-in-out;
 }

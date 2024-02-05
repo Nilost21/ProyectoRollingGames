@@ -1,4 +1,4 @@
-import juegoObtenidoURL from './components/gameInfo/juegoObtenidoHTML.js';
+import juegoObtenidoHTML from './components/gameInfo/juegoObtenidoHTML.js';
 import { obtenerJuegos } from './utils/obtenerDatos.js';
 
 async function obtenerJuegoPorIdUrl() {
@@ -13,7 +13,7 @@ async function obtenerJuegoPorIdUrl() {
   );
 
   console.log(juegoEncontrado);
-  juegoObtenidoURL(juegoEncontrado);
+  juegoObtenidoHTML(juegoEncontrado);
 }
 
 export default obtenerJuegoPorIdUrl();

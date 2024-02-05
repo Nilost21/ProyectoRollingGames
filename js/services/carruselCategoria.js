@@ -1,5 +1,4 @@
 import { obtenerJuegos } from '../utils/obtenerDatos.js';
-import obtenerJuegoPorClick from '../utils/obtenerJuegoPorID.js';
 import { mostrarCategoriaHTML } from './mostrarCategoriaHTML.js';
 export const contenedorCards = document.querySelector('#contenedor-cards');
 export const rowCards = document.querySelector('#row-cards');

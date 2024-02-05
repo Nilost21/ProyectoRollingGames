@@ -44,7 +44,7 @@ export const mostrarCategoriaHTML = (juegos) => {
             ${price},99 US$
           </p>
           <div class="px-0 text-center mt-2">
-            <a href="#" data-id="${id}" class="link-juego btn btn-light fw-bold ps-2 ">
+            <a href="/views/game.html?id=${id}&nombre=${name}" data-id="${id}" class="link-juego btn btn-light fw-bold ps-2 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
