@@ -7,12 +7,28 @@
 }
 
 .btn-navbar {
-    border-radius: 10px 10px 10px 10px; /* Radio de borde para hacer el botón redondeado */
+    border-radius: 10px 10px 10px 10px;
   padding: 1px 8px; 
-  background-color: #303034; /* Color de fondo del botón */
+  background-color: #303034; 
 }
   
-  /* Cambiar el estilo al pasar el ratón por encima */
+
   .btn-rounded:hover {
-    background-color: #61CDFF; /* Cambia el color de fondo al pasar el ratón por encima */
+    background-color: #61CDFF; 
   }
+
+  input[type="text"]:focus {
+    outline: #303034;
+    color:#E6E6EA
+  }
+
+  .cursor-navbar {
+    cursor: pointer; 
+    color: #9A9A9A;
+    transition: color 0.3s ease; 
+
+    &:hover {
+        color: white;
+    }
+}
+

@@ -1,0 +1,230 @@
+
+
+
+body {
+    overflow-x: hidden;
+      background-color: #121212;
+    }
+
+#login-anchor:hover {
+    text-decoration:underline !important;
+}
+
+.e-card {
+  margin: 50px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 540px;
+  height: 650px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 1500px;
+  height: 1000px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -70%;
+  margin-top: -40%;
+  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  overflow: hidden;
+}
+
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop {
+  
+  font-size: 20px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
+  text-transform: lowercase;
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+#button-submit {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: .125em;
+    --curve-size: .5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+    /* use position: relative; so that BG is only for #button-submit */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: .5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    clip-path: polygon(
+      /* Top-left */
+      0% var(--curve-size),
+      
+      var(--curve-size) 0,
+      /* top-right */
+      100% 0,
+      100% calc(100% - var(--curve-size)),
+      
+      /* bottom-right 1 */
+      calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */
+      0 100%);
+    transition: color 250ms;
+  }
+  
+  #button-submit::after,
+  #button-submit::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  #button-submit::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%
+    }
+  
+    50% {
+      background-position: 70% 100%
+    }
+  
+    100% {
+      background-position: 31% 0%
+    }
+  }
+  
+  #button-submit::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+      /* Top-left */
+      var(--border-width) 
+      calc(var(--curve-size) + var(--border-width) * .5),
+      
+      calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+      
+      /* top-right */
+      calc(100% - var(--border-width)) 
+      var(--border-width),
+      
+      calc(100% - var(--border-width)) 
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+      var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+  }
+  
+  #button-submit:where(:hover, :focus)::after {
+    clip-path: polygon(
+      /* Top-left */
+      calc(100% - var(--border-width)) 
+      
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+  
+      calc(100% - var(--border-width))
+  
+      var(--border-width),
+      
+      /* top-right */
+      calc(100% - var(--border-width))
+  
+       var(--border-width),
+      
+      calc(100% - var(--border-width)) 
+  
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+      /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+      calc(100% - var(--border-width)),
+  
+      /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)));
+    transition: 200ms;
+  }
+  
+  #button-submit:where(:hover, :focus) {
+    color: #fff;
+  }

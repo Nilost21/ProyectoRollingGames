@@ -1,5 +1,5 @@
 .bg-cards {
-    background-color: #18181C;
+    background-color: #121212;
 }
 
 
@@ -14,4 +14,60 @@
   }
 
 
- 
+ .categoria-color {
+  color: #9A9A9A
+ }
+
+
+ .sombreado {
+  transition: all 0.3s; 
+}
+
+
+.sombreado:hover {
+  opacity: 0.8;
+  filter: brightness(80%);
+  
+}
+
+
+
+.sombreado :not(.hijo) {
+  opacity: 0.8;
+  filter: brightness(90%);
+}
+
+.hover-pointer {
+  cursor: pointer;
+}
+
+.sombra-difuminada {
+  filter: brightness(75%) blur(0.1px)
+}
+
+@keyframes aparecerGradualmente {
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1); 
+  }
+}
+
+@keyframes desplazarIzquierdaDerecha2 {
+  0% {
+    transform: translateX(-1%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1; 
+  }
+}
+
+
+.animacion-principal {
+  animation: desplazarIzquierdaDerecha2 3s ease-in-out;
+}

@@ -1,3 +1,8 @@
+body{
+  background-color: #121212;
+  overflow-x: hidden;
+}
+
 #adminTableBody .destacado-row {
     background-color: #d4c923!important; /* Cambia el color de fondo según tus preferencias */
 }
@@ -8,4 +13,8 @@
       overflow: auto;
       max-height: 100px; /* Ajusta esto según tus necesidades para evitar que se vuelva demasiado grande */
     }
+  }
+
+  .form-select:hover, .form-check-input:hover {
+    cursor: pointer;
   }

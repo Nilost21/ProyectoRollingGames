@@ -6,3 +6,32 @@
     max-width: 315px;
     max-height: 399px;
 }
+
+
+.bg-filter {
+    filter: blur(1.2px);
+    color: #000000fd;
+    
+}
+
+.bg-shadow {
+    /* background: rgba(5, 5, 5, 0.7); */
+    backdrop-filter: brightness(0.5);
+}
+
+
+@keyframes desplazarIzquierdaDerecha {
+    0% {
+      transform: translateX(-10%);
+      opacity: 0; /* Comienza con opacidad 0 al inicio */
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1; /* Aparece completamente al final */
+    }
+  }
+  
+  /* Clase para aplicar la animación */
+  .animacion-izquierda-derecha {
+    animation: desplazarIzquierdaDerecha 3s ease-in-out;
+  }

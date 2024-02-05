@@ -1,17 +1,27 @@
 // IMPORTAR NAVBAR
 import TableRowJuegos from "./components/TableRow-Juegos.js";
+import TableRowUsuarios from "./components/TableRow-Usuarios.js";
 import { getJuegos } from "./services/getJuegos.js";
 import { protectedAdminRoute } from "./routes/protectedAdmin.route.js";
 import { createJuego } from "./services/createJuego.js";
 import { setJuegos } from "./services/setJuegos.js";
+import { setUsuarios } from "./services/setUsuarios.js";
+import { getUsers } from "./services/getUsers.js";
+import { logout } from "./utils/logout.js";
+import { getLoggedUser } from "./services/getLoggedUser.js";
+
 document.addEventListener("DOMContentLoaded", () => {
-    // NAVBAR
     setJuegos();
-    //protectedAdminRoute();
+    setUsuarios();
+    protectedAdminRoute();
     renderTableBody();
 });
 
-const tableBody = document.getElementById("adminTableBody")
+const username = document.getElementById("username");
+username.innerHTML = `<i class="bi bi-person ms-2 me-2"></i>${getLoggedUser().email}`;
+
+const tableBody = document.getElementById("adminTableBody");
+const tableBodyUsuarios = document.getElementById("adminTableBodyUsuarios");
 
 /**
  * @returns Renderiza las filas de la tabla de juegos en el panel de admin.
@@ -21,6 +31,10 @@ export const renderTableBody = () => {
     const juegos = getJuegos();
     console.log(getJuegos(),"<--Linea")
     juegos.map(juego => tableBody.innerHTML += TableRowJuegos(juego));
+
+    tableBodyUsuarios.innerHTML = "";
+    const usuarios = getUsers();
+    usuarios.map(usuario => tableBodyUsuarios.innerHTML += TableRowUsuarios(usuario));
 }
 
 const agregarNuevoJuego = () => {
@@ -69,5 +83,11 @@ const agregarNuevoJuego = () => {
     renderTableBody();
 }
 
+const logoutHandler = () => {
+    logout();
+};
+
+
 
 window.agregarNuevoJuego = agregarNuevoJuego;
+window.logoutHandler = logoutHandler;
