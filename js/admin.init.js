@@ -7,6 +7,8 @@ import { createJuego } from "./services/createJuego.js";
 import { setJuegos } from "./services/setJuegos.js";
 import { setUsuarios } from "./services/setUsuarios.js";
 import { getUsers } from "./services/getUsers.js";
+import { logout } from "./utils/logout.js";
+import { getLoggedUser } from "./services/getLoggedUser.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     setJuegos();
@@ -14,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     protectedAdminRoute();
     renderTableBody();
 });
+
+const username = document.getElementById("username");
+username.innerHTML = `<i class="bi bi-person ms-2 me-2"></i>${getLoggedUser().email}`;
 
 const tableBody = document.getElementById("adminTableBody");
 const tableBodyUsuarios = document.getElementById("adminTableBodyUsuarios");
@@ -78,5 +83,11 @@ const agregarNuevoJuego = () => {
     renderTableBody();
 }
 
+const logoutHandler = () => {
+    logout();
+};
+
+
 
 window.agregarNuevoJuego = agregarNuevoJuego;
+window.logoutHandler = logoutHandler;

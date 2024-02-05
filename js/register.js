@@ -4,13 +4,11 @@ import { validateRepeatPassword } from "./validators/validateRepeatPassword.js";
 import { validateExistingEmail } from "./validators/validateExistingEmail.js";
 import { validateEmail } from "./validators/validateEmail.js";
 import { setUsuarios } from "./services/setUsuarios.js";
-import { redirectIndex } from "./utils/redirectIndex.js"
+import { redirectLogin } from "./utils/redirectLogin.js"
 import { createUser } from "./services/createUser.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // NAVBAR
     setUsuarios(); 
-    // FOOTER
 });
 
 const signUpFormEmail = document.getElementById("emailSignUpInput"); 
@@ -19,19 +17,19 @@ const signUpFormPasswordInput =  document.getElementById("emailSignUpPassword");
 const signUpFormRepeatPassword = document.getElementById("repeatSignUpPassword");
 const signUpForm = document.getElementById("signUpForm");
 
-//DOCUMENTAR: mostrar el password
+//Muestra el password
 showPasswordButton.addEventListener("click", (e) => {
     showPassword(e)
 })
 
 
-//DOCUMENTAR: no se pega contraseña 1 y sale una alerta
+//Impide pegar la contraseña 1 y sale una alerta
 signUpFormPasswordInput.addEventListener('paste', (e) => {
     e.preventDefault();
     alert("No se permite pegar texto en el campo contraseña");
   });
   
-//DOCUMENTAR: no se pega contraseña 2 y sale una alerta
+//Impide pegar la contraseña 2 y sale una alerta
 signUpFormRepeatPassword.addEventListener('paste', (e) => {
     e.preventDefault();
     alert("No se permite pegar texto en el campo contraseña");
@@ -45,7 +43,7 @@ signUpFormRepeatPassword.addEventListener('paste', (e) => {
  */
 
 const passwordFeedback = (password) =>{
-    signUpFormPasswordInput.classList.remove("is-valid") //limpia estado
+    signUpFormPasswordInput.classList.remove("is-valid")
     signUpFormPasswordInput.classList.remove("is-invalid")
 
     if (validateSignUpPassword(password)) {
@@ -106,21 +104,24 @@ const emailFeedback = (email) => {
 const showSuccesfulSignUpModal = () =>{
     const modal = new bootstrap.Modal(document.getElementById('succesfulSignupModal'))
     modal.show()
-    setTimeout(redirectIndex, 3000)
+    setTimeout(redirectLogin, 8000)
 } 
 
-
+/**
+ * 
+ * Valida el formulario y si todo esta OK crea un usuario, abre un modal y redirecciona al Index
+ */
 const signUpSubmit = (e) => {
     e.preventDefault();
 
-    //tomar los datos de los input
+    //Toma los datos de los input
     const email = signUpFormEmail.value;
     const password = signUpFormPasswordInput.value;
     const repeatPassword = signUpFormRepeatPassword.value;
 
     if (emailFeedback(email) && passwordFeedback(password) && repeatPasswordFeedback(password, repeatPassword)) {
 
-        createUser({email,password}); //manda un objeto email+password
+        createUser(email,password); //manda un objeto email+password
         showSuccesfulSignUpModal();
     } else {
         alert("Error en la validación");

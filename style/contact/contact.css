@@ -165,7 +165,7 @@ body{
    
    
    
-   #button-submit {
+   #contact-submit {
        --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
        --border-width: .125em;
        --curve-size: .5em;
@@ -199,14 +199,14 @@ body{
        transition: color 250ms;
      }
      
-     #button-submit::after,
-     #button-submit::before {
+     #contact-submit::after,
+     #contact-submit::before {
        content: '';
        position: absolute;
        inset: 0;
      }
      
-     #button-submit::before {
+     #contact-submit::before {
        background: var(--border-color);
        background-size: 300% 300%;
        animation: move-bg7234 5s ease infinite;
@@ -227,7 +227,7 @@ body{
        }
      }
      
-     #button-submit::after {
+     #contact-submit::after {
        background: var(--bg);
        z-index: -1;
        clip-path: polygon(
@@ -251,7 +251,7 @@ body{
        transition: clip-path 500ms;
      }
      
-     #button-submit:where(:hover, :focus)::after {
+     #contact-submit:where(:hover, :focus)::after {
        clip-path: polygon(
          /* Top-left */
          calc(100% - var(--border-width)) 
@@ -281,7 +281,7 @@ body{
        transition: 200ms;
      }
      
-     #button-submit:where(:hover, :focus) {
+     #contact-submit:where(:hover, :focus) {
        color: #fff;
      }
 

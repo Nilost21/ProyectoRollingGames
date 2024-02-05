@@ -23,7 +23,7 @@
     background: rgba(0, 0, 0, 0.5); 
     z-index: -1;
   }
-  .card {
+  .card-aboutus {
     width: 17em;
     height: 22.5em;
     background: #171717;
@@ -35,7 +35,7 @@
     flex-direction: column;
   }
   
-  .card span {
+  .card-aboutus span {
     font-weight: bold;
     color: white;
     text-align: center;
@@ -43,7 +43,7 @@
     font-size: 1em;
   }
   
-  .card .info {
+  .card-aboutus .info {
     font-weight: 400;
     color: white;
     display: block;
@@ -52,7 +52,7 @@
     margin: 1em;
   }
   
-  .card .img {
+  .card-aboutus .img-aboutus {
     width: 4.8em;
     height: 4.8em;
     background: white;
@@ -60,23 +60,23 @@
     margin: auto;
   }
   
-  .card .share {
+  .card-aboutus .share {
     margin-top: 1em;
     display: flex;
     justify-content: center;
     gap: 1em;
   }
   
-  .card a {
+  .card-aboutus a {
     color: white;
     transition: .4s ease-in-out;
   }
   
-  .card a:hover {
+  .card-aboutus a:hover {
     color: red;
   }
   
-  .card button {
+  .card-aboutus button {
     padding: 0.8em 1.7em;
     display: block;
     margin: auto;
@@ -88,7 +88,7 @@
     transition: .4s ease-in-out;
   }
   
-  .card button:hover {
+  .card-aboutus button:hover {
     background: red;
     color: white;
     cursor: pointer;
