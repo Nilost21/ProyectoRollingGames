@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
   filtroBusqueda();
   carruselCategoría();
   juegosGratis();
+  usuarioLogeado()
 });
