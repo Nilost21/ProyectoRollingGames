@@ -58,8 +58,8 @@ const juegoObtenidoHTML = (juego) => {
                 </p>
                 <div class="px-0 text-center mt-1">
                   <a
-                    href="#"
-                    class="link-juego btn btn-light fw-bold ps-1 pe-1 mb-3"
+                    href="/views/login.html"
+                    class="comprar-juego btn btn-light fw-bold ps-1 pe-1 mb-3"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
