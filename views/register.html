@@ -78,90 +78,86 @@
       <!-- Navbar -->
     </header>
 
-    <main>
-      <section class="container vh-100 mt-5 w-100 d-flex justify-content-center">
-        <div class="box-register">
-          <form id="signUpForm">
-            <div class="text-center d-flex align-items-center my-3 pb-3 border border-light border-0 border-bottom">
-              <img src="/assets/admin-logo.png" class="img-fluid w-25" alt="logo de pagina" />
-              <div class="ms-4 text-start text-white">
-                <h1 class="">Formulario de Registro</h1>
+    <div class="e-card playing">
+      <div class="image"></div>
+      
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      
+    
+          <div class="infotop">
+    
+            <!-- IMPORTANTE! -->
+            <section class="container d-flex justify-content-center vh-100 mt-4 mt-sm-5 w-100 mb-0">
+              <form action="" id="signUpForm">
+      
+                <div class="text-center d-flex align-items-center my-1 pb-3 border border-light border-0 border-bottom">
+                    <img src="../assets/admin-logo.png" alt="login-logo" class="img-fluid w-25">
+                    <div class="ms-4 text-start">
+                        <h1 class="display-5 fw-semibold">Rolling Games</h1>
+                        <h4 class="display-6 ">Formulario</h4>
+                    </div>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="emailSignUpInput" class="form-label">Ingrese su Email</label>
+                    <input type="email" class="form-control" name="email" id="emailSignUpInput" maxlength="30" placeholder="nombre@mail.com">
+                    <div class="invalid-feedback">
+                      El email ingresado es invalido o ya esta registrado.
+                    </div>
+                </div>
+
+                <label for="emailSignUpPassword" class="form-label">Ingrese su contraseña</label>
+                <div class="input-group mb-2">
+                    <input type="password" class="form-control" name="password" id="emailSignUpPassword" maxlength="10">
+                    <button class="btn btn-dark border  border-start-0 input-group-text" id = "showPasswordBtn">
+                        <i id="icon" class="bi bi-eye-slash"></i>
+                    </button>
+                    <div class="invalid-feedback">La contraseña ingresada es invalida.</div>
+                </div>
+                <div class="form-text mb-3 text-light" id="basic-addon4">
+                  Debe contener entre 8-10 caracteres y una letra y un número
+                </div>
+
+                <label for="repeatSignUpPassword" class="form-label">Vuelva a ingresar su contraseña</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" name="password" id="repeatSignUpPassword" maxlength="10">
+                    <div class="invalid-feedback">Las contraseñas no coinciden</div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <button id="button-submit" type="submit" class=" btn btn-secondary mt-4">
+                    Registrar
+                  </button>
+                </div>
+              </form>
+          </section>
+          <!-- IMPORTANTE! -->
+          <div
+          class="modal fade modal-lg"
+          id="succesfulSignupModal"
+          tabindex="-1"
+          data-bs-backdrop="static"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+              <div class="modal-body border-0">
+                <div class="text-center">
+                  <i class="bi bi-check-lg display-1 text-success"></i>
+                  <h2 class="fw-normal my-2">Te has registrado exitosamente!</h2>
+                  <p class="my-4">
+                    Te redirigiremos a la pagina de Login. Podrás ingresar cuando el Administrador apruebe tu cuenta.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="mb-4 position-relative">
-              <label for="emailSignUpInput" class="form-label text-light">Ingrese un Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="emailSignUpInput"
-                name="email"
-                maxlength="30"
-              />
-              <div class="invalid-feedback">
-                El email ingresado es invalido o ya esta registrado.
-              </div>
-            </div>
-  
-            <label for="emailSignUpPassword" class="form-label text-light">Ingrese su contraseña</label>
-            <div class="input-group mb-1 position-relative">
-              <input
-                type="password"
-                class="form-control"
-                id="emailSignUpPassword"
-                name="password"
-                maxlength="10"
-              />
-              <button class="btn btn-dark border border-start-0 input-group-text" id="showPasswordBtn">
-                <i id="icon" class="bi bi-eye-slash"></i>
-              </button>
-              <div class="invalid-feedback">La contraseña ingresada es invalida.</div>
-            </div>
-            <div class="form-text mb-3 text-light" id="basic-addon4">
-              Su contraseña debe contener entre 8 y 10 caracteres y al menos una
-              letra y un número
-            </div>
-            <label for="repeatSignUpPassword" class="form-label text-light">Vuelva a ingresar su contraseña</label>
-            <div class="input-group mb-3 position-relative">
-              <input
-                type="password"
-                class="form-control"
-                id="repeatSignUpPassword"
-                name="repeatPassword"
-                maxlength="10"
-              />
-              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
-            </div>
-            <div class="d-flex align-items-center">
-              <button id="button-submit" type="submit" class=" btn btn-secondary mt-4">
-                Registrar
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <div
-      class="modal fade modal-lg"
-      id="succesfulSignupModal"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body border-0">
-            <div class="text-center">
-              <i class="bi bi-check-lg display-1 text-success"></i>
-              <h2 class="fw-normal my-2">Te has registrado exitosamente!</h2>
-              <p class="my-4">
-                Te redirigiremos a la pagina de Login. Podrás ingresar cuando el Administrador apruebe tu cuenta.
-              </p>
             </div>
           </div>
         </div>
-      </div>
+
+        </div>
     </div>
-    </main>
 
     <footer class="container-fluid p-0 mt-3 py-2 bg-footer">
       <div class="row mt-3">

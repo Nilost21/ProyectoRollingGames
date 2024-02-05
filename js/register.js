@@ -8,9 +8,7 @@ import { redirectLogin } from "./utils/redirectLogin.js"
 import { createUser } from "./services/createUser.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // NAVBAR
     setUsuarios(); 
-    // FOOTER
 });
 
 const signUpFormEmail = document.getElementById("emailSignUpInput"); 
@@ -106,7 +104,7 @@ const emailFeedback = (email) => {
 const showSuccesfulSignUpModal = () =>{
     const modal = new bootstrap.Modal(document.getElementById('succesfulSignupModal'))
     modal.show()
-    setTimeout(redirectLogin, 3000)
+    setTimeout(redirectLogin, 8000)
 } 
 
 /**
