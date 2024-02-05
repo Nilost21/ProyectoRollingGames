@@ -58,7 +58,7 @@ const juegoObtenidoHTML = (juego) => {
                 </p>
                 <div class="px-0 text-center mt-1">
                   <a
-                    href="/views/login.html"
+                    href="/views/error404.html"
                     class="comprar-juego btn btn-light fw-bold ps-1 pe-1 mb-3"
                   >
                     <svg
@@ -83,7 +83,7 @@ const juegoObtenidoHTML = (juego) => {
           <h1 class="text-center text-md-start mb-1 fw-bold fs-4 mt-1 ms-lg-5 mt-lg-3">${name}</h1>
           </div>
           <div class="col-12 col-md-6 col-lg-8">
-          <h6 class="text-center mb-4 text-light text-md-start fs-5 mt-1 ms-lg-5 mt-lg-3 pe-0 ms-2 ms-md-0">${description}</h6>
+          <h6 class="text-center mb-4 text-light text-md-start fw-bold mt-1 ms-lg-5 mt-lg-3 pe-0 ms-2 ms-md-0">${description}</h6>
           </div>
   `;
 
